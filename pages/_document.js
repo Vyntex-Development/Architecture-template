@@ -1,0 +1,26 @@
+import Document, { Html, Head, Main, NextScript } from "next/document";
+
+class CustomDocument extends Document {
+  render = () => (
+    <Html lang="en">
+      <Head>
+        {/* <link
+        //  OVDE MOZE DE SE LOAD-UJE NPR CSS FILE
+          rel="preload"
+          href="/fonts/VCR_OSD_MONO_1.001.ttf"
+          as="font"
+          crossOrigin="anonymous"
+        /> */}
+      </Head>
+      <body>
+        <Main />
+        <NextScript />
+        {/* <div id="modal-root"></div>
+        // SLUZI NPR KOD MODALA ILI NPR LIGHTBOX-A
+        <div id="address-modal-root"></div> */}
+      </body>
+    </Html>
+  );
+}
+
+export default CustomDocument;
