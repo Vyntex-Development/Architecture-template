@@ -125,7 +125,7 @@ const Blog = () => {
                 </div>
               </div>
               <div className={classes.BlogContentWrapper}>
-                <h3>Stone-Clad Monotony at Norway's National Museum</h3>
+                <h3>Stone-Clad Monotony at Norway &apos;s National Museum</h3>
                 <p>
                   Maecenas efficitur magna nulla, nec volutpat sem convallis
                   quis. Nam molestie venenatis malesuada...
