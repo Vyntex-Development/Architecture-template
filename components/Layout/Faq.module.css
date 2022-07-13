@@ -49,3 +49,48 @@
   justify-content: center;
   align-items: center;
 }
+
+.FaqRight {
+  width: 50%;
+}
+
+.Faq {
+  width: 100%;
+  cursor: pointer;
+}
+
+.FaqQuestionWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(119, 123, 125, 0.2);
+}
+
+.FaqQuestionWrapper p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.31rem;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: #7d7977;
+}
+
+.FaqAnswerWrapper {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.FaqAnswerWrapper p {
+  color: var(--black);
+  padding-bottom: 1.5rem;
+}
+
+.Faq.Active .FaqAnswerWrapper {
+  padding-top: 1rem;
+  background-color: red;
+  max-height: 400px;
+  transition: all 0.3s ease-in-out;
+}

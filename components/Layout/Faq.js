@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "../UI/Link";
 import classes from "./Faq.module.css";
 
-const Faq = () => {
+const Faq = ({ setActiveFaq, activeFaq }) => {
+  console.log(activeFaq);
   return (
     <div className="container">
       <div className={classes.FaqWrapper}>
@@ -29,6 +30,192 @@ const Faq = () => {
               </div>
               631-780-6123
             </a>
+          </div>
+        </div>
+        <div className={classes.FaqRight}>
+          <div
+            className={`${classes.Faq}${
+              activeFaq === "1" ? classes.Active : ""
+            }`}
+          >
+            <div
+              onClick={() => {
+                setActiveFaq("1");
+              }}
+              className={classes.FaqQuestionWrapper}
+            >
+              <p>At what point in my project should I involve an architect?</p>
+              <div className={classes.FaqIcon}>
+                <Image
+                  layout="fixed"
+                  objectFit="fill"
+                  alt="icon"
+                  width={16}
+                  height={16}
+                  src="/images/faq_icon.png"
+                ></Image>
+              </div>
+            </div>
+            <div
+              className={`${classes.FaqAnswerWrapper}${
+                activeFaq === "1" ? classes.Active : ""
+              }`}
+            >
+              <p>
+                Maecenas efficitur magna nulla, nec volutpat sem convallis quis.
+                Nam molestie venenatis malesuada. Proin dolor sapien, placerat
+                non rhoncus feugiat, ullamcorper vel massa.
+              </p>
+              <p>
+                Nullam egestas justo ac arcu dapibus volutpat. Sed ultrices,
+                mauris nec eleifend ultricies, nunc sapien hendrerit ligula, ac
+                aliquet lorem nisi sed leo iaculis placerat elit.
+              </p>
+            </div>
+          </div>
+          <div className={classes.Faq}>
+            <div
+              onClick={() => {
+                setActiveFaq("2");
+              }}
+              className={classes.FaqQuestionWrapper}
+            >
+              <p>At what point in my project should I involve an architect?</p>
+              <div className={classes.FaqIcon}>
+                <Image
+                  layout="fixed"
+                  objectFit="fill"
+                  alt="icon"
+                  width={16}
+                  height={16}
+                  src="/images/faq_icon.png"
+                ></Image>
+              </div>
+            </div>
+            <div
+              className={`${classes.FaqAnswerWrapper}${
+                activeFaq === "2" ? classes.Active : ""
+              }`}
+            >
+              <p>
+                Maecenas efficitur magna nulla, nec volutpat sem convallis quis.
+                Nam molestie venenatis malesuada. Proin dolor sapien, placerat
+                non rhoncus feugiat, ullamcorper vel massa.
+              </p>
+              <p>
+                Nullam egestas justo ac arcu dapibus volutpat. Sed ultrices,
+                mauris nec eleifend ultricies, nunc sapien hendrerit ligula, ac
+                aliquet lorem nisi sed leo iaculis placerat elit.
+              </p>
+            </div>
+          </div>
+          <div className={classes.Faq}>
+            <div
+              onClick={() => {
+                setActiveFaq("3");
+              }}
+              className={classes.FaqQuestionWrapper}
+            >
+              <p>At what point in my project should I involve an architect?</p>
+              <div className={classes.FaqIcon}>
+                <Image
+                  layout="fixed"
+                  objectFit="fill"
+                  alt="icon"
+                  width={16}
+                  height={16}
+                  src="/images/faq_icon.png"
+                ></Image>
+              </div>
+            </div>
+            <div
+              className={`${classes.FaqAnswerWrapper}${
+                activeFaq === "3" ? classes.Active : ""
+              }`}
+            >
+              <p>
+                Maecenas efficitur magna nulla, nec volutpat sem convallis quis.
+                Nam molestie venenatis malesuada. Proin dolor sapien, placerat
+                non rhoncus feugiat, ullamcorper vel massa.
+              </p>
+              <p>
+                Nullam egestas justo ac arcu dapibus volutpat. Sed ultrices,
+                mauris nec eleifend ultricies, nunc sapien hendrerit ligula, ac
+                aliquet lorem nisi sed leo iaculis placerat elit.
+              </p>
+            </div>
+          </div>
+          <div className={classes.Faq}>
+            <div
+              onClick={() => {
+                setActiveFaq("4");
+              }}
+              className={classes.FaqQuestionWrapper}
+            >
+              <p>At what point in my project should I involve an architect?</p>
+              <div className={classes.FaqIcon}>
+                <Image
+                  layout="fixed"
+                  objectFit="fill"
+                  alt="icon"
+                  width={16}
+                  height={16}
+                  src="/images/faq_icon.png"
+                ></Image>
+              </div>
+            </div>
+            <div
+              className={`${classes.FaqAnswerWrapper}${
+                activeFaq === "4" ? classes.Active : ""
+              }`}
+            >
+              <p>
+                Maecenas efficitur magna nulla, nec volutpat sem convallis quis.
+                Nam molestie venenatis malesuada. Proin dolor sapien, placerat
+                non rhoncus feugiat, ullamcorper vel massa.
+              </p>
+              <p>
+                Nullam egestas justo ac arcu dapibus volutpat. Sed ultrices,
+                mauris nec eleifend ultricies, nunc sapien hendrerit ligula, ac
+                aliquet lorem nisi sed leo iaculis placerat elit.
+              </p>
+            </div>
+          </div>
+          <div className={classes.Faq}>
+            <div
+              onClick={() => {
+                setActiveFaq("5");
+              }}
+              className={classes.FaqQuestionWrapper}
+            >
+              <p>At what point in my project should I involve an architect?</p>
+              <div className={classes.FaqIcon}>
+                <Image
+                  layout="fixed"
+                  objectFit="fill"
+                  alt="icon"
+                  width={16}
+                  height={16}
+                  src="/images/faq_icon.png"
+                ></Image>
+              </div>
+            </div>
+            <div
+              className={`${classes.FaqAnswerWrapper}${
+                activeFaq === "5" ? classes.Active : ""
+              }`}
+            >
+              <p>
+                Maecenas efficitur magna nulla, nec volutpat sem convallis quis.
+                Nam molestie venenatis malesuada. Proin dolor sapien, placerat
+                non rhoncus feugiat, ullamcorper vel massa.
+              </p>
+              <p>
+                Nullam egestas justo ac arcu dapibus volutpat. Sed ultrices,
+                mauris nec eleifend ultricies, nunc sapien hendrerit ligula, ac
+                aliquet lorem nisi sed leo iaculis placerat elit.
+              </p>
+            </div>
           </div>
         </div>
       </div>
