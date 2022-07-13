@@ -1,0 +1,38 @@
+.BanerSection {
+  width: 100%;
+  display: flex;
+}
+.BanerLeft {
+  width: 50%;
+}
+.BanerImage {
+  position: relative;
+  width: 100%;
+  height: 26rem;
+}
+
+.BanerContent {
+  width: 50%;
+  background-color: var(--red);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 8em;
+}
+
+.ContentWrapper {
+  max-width: 25.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+.ContentWrapper h2,
+.ContentWrapper p {
+  color: #fffdfb;
+}
+
+.ContentWrapper p {
+  margin-bottom: 1.5rem;
+}

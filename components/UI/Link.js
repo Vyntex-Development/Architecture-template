@@ -26,7 +26,9 @@ const Link = ({ children, href, type }) => {
 
   return (
     <div className={`${classes.Link} ${className}`}>
-      <NextLink href={href}>{children}</NextLink>
+      <NextLink passHref href={href}>
+        <a>{children}</a>
+      </NextLink>
     </div>
   );
 };

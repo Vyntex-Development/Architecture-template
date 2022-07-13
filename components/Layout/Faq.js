@@ -33,16 +33,14 @@ const Faq = ({ setActiveFaq, activeFaq }) => {
           </div>
         </div>
         <div className={classes.FaqRight}>
-          <div
-            className={`${classes.Faq}${
-              activeFaq === "1" ? classes.Active : ""
-            }`}
-          >
+          <div className={classes.Faq}>
             <div
               onClick={() => {
                 setActiveFaq("1");
               }}
-              className={classes.FaqQuestionWrapper}
+              className={`${classes.FaqQuestionWrapper} ${
+                activeFaq === "1" ? classes.ActiveQuestion : ""
+              }`}
             >
               <p>At what point in my project should I involve an architect?</p>
               <div className={classes.FaqIcon}>
@@ -57,7 +55,7 @@ const Faq = ({ setActiveFaq, activeFaq }) => {
               </div>
             </div>
             <div
-              className={`${classes.FaqAnswerWrapper}${
+              className={`${classes.FaqAnswerWrapper} ${
                 activeFaq === "1" ? classes.Active : ""
               }`}
             >
@@ -78,9 +76,11 @@ const Faq = ({ setActiveFaq, activeFaq }) => {
               onClick={() => {
                 setActiveFaq("2");
               }}
-              className={classes.FaqQuestionWrapper}
+              className={`${classes.FaqQuestionWrapper} ${
+                activeFaq === "2" ? classes.ActiveQuestion : ""
+              }`}
             >
-              <p>At what point in my project should I involve an architect?</p>
+              <p>How do I find the right architect for my project? </p>
               <div className={classes.FaqIcon}>
                 <Image
                   layout="fixed"
@@ -93,7 +93,7 @@ const Faq = ({ setActiveFaq, activeFaq }) => {
               </div>
             </div>
             <div
-              className={`${classes.FaqAnswerWrapper}${
+              className={`${classes.FaqAnswerWrapper} ${
                 activeFaq === "2" ? classes.Active : ""
               }`}
             >
@@ -114,9 +114,11 @@ const Faq = ({ setActiveFaq, activeFaq }) => {
               onClick={() => {
                 setActiveFaq("3");
               }}
-              className={classes.FaqQuestionWrapper}
+              className={`${classes.FaqQuestionWrapper} ${
+                activeFaq === "3" ? classes.ActiveQuestion : ""
+              }`}
             >
-              <p>At what point in my project should I involve an architect?</p>
+              <p>Don&apos;t architects add substantial cost to a project?</p>
               <div className={classes.FaqIcon}>
                 <Image
                   layout="fixed"
@@ -129,7 +131,7 @@ const Faq = ({ setActiveFaq, activeFaq }) => {
               </div>
             </div>
             <div
-              className={`${classes.FaqAnswerWrapper}${
+              className={`${classes.FaqAnswerWrapper} ${
                 activeFaq === "3" ? classes.Active : ""
               }`}
             >
@@ -150,9 +152,11 @@ const Faq = ({ setActiveFaq, activeFaq }) => {
               onClick={() => {
                 setActiveFaq("4");
               }}
-              className={classes.FaqQuestionWrapper}
+              className={`${classes.FaqQuestionWrapper} ${
+                activeFaq === "4" ? classes.ActiveQuestion : ""
+              }`}
             >
-              <p>At what point in my project should I involve an architect?</p>
+              <p>How are architects compensated?</p>
               <div className={classes.FaqIcon}>
                 <Image
                   layout="fixed"
@@ -165,7 +169,7 @@ const Faq = ({ setActiveFaq, activeFaq }) => {
               </div>
             </div>
             <div
-              className={`${classes.FaqAnswerWrapper}${
+              className={`${classes.FaqAnswerWrapper} ${
                 activeFaq === "4" ? classes.Active : ""
               }`}
             >
@@ -186,9 +190,11 @@ const Faq = ({ setActiveFaq, activeFaq }) => {
               onClick={() => {
                 setActiveFaq("5");
               }}
-              className={classes.FaqQuestionWrapper}
+              className={`${classes.FaqQuestionWrapper} ${
+                activeFaq === "5" ? classes.ActiveQuestion : ""
+              }`}
             >
-              <p>At what point in my project should I involve an architect?</p>
+              <p>What&apos;s my role in the design process?</p>
               <div className={classes.FaqIcon}>
                 <Image
                   layout="fixed"
@@ -201,7 +207,7 @@ const Faq = ({ setActiveFaq, activeFaq }) => {
               </div>
             </div>
             <div
-              className={`${classes.FaqAnswerWrapper}${
+              className={`${classes.FaqAnswerWrapper} ${
                 activeFaq === "5" ? classes.Active : ""
               }`}
             >

@@ -5,6 +5,7 @@ import Intro from "../../Layout/Intro";
 import Process from "../../Layout/Process";
 import Services from "../../Layout/Services";
 import Testimonials from "../../Layout/Testimonials";
+import Baner from "../../Layout/Baner";
 import { useState } from "react";
 
 const HomePage = () => {
@@ -23,6 +24,7 @@ const HomePage = () => {
           setActiveFaq(id);
         }}
       ></Faq>
+      <Baner></Baner>
     </>
   );
 };

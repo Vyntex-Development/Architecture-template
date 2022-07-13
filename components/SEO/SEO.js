@@ -21,7 +21,7 @@ const SEO = ({ seo }) => {
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={ogUrl} />
       <meta property="og:description" content={ogDescription} /> */}
-      <link
+      {/* <link
         rel="apple-touch-icon"
         sizes="180x180"
         href="/images/apple-touch-icon.png"
@@ -38,7 +38,7 @@ const SEO = ({ seo }) => {
         sizes="16x16"
         href="/images/favicon-16x16.png"
       />
-      <link rel="manifest" href="/images/site.webmanifest"></link>
+      <link rel="manifest" href="/images/site.webmanifest"></link> */}
       <meta name="theme-color" content="#ffffff" />
       {/* <link
         rel="preload"
