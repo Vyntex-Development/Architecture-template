@@ -1,0 +1,76 @@
+.ServicesWrapper {
+  padding-top: 5rem;
+  padding-bottom: 7.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ServicesLeft {
+  width: 27rem;
+  margin-left: 7em;
+  padding-top: 4.37rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.ServicesItemWrapper {
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.ServicesItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.ServicesArrow {
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.ServicesContentWrapper {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+
+.ProgressWrapper {
+  width: 100%;
+  background-color: rgba(119, 123, 125, 0.2);
+  height: 1px;
+}
+
+.Progress {
+  height: 100%;
+  background-color: var(--black);
+  width: 0%;
+  transition: all 0.5s ease-in-out;
+}
+
+.ServicesItemWrapper:hover p {
+  color: var(--black);
+}
+
+.ServicesItemWrapper:hover .ServicesArrow {
+  filter: invert(63%) sepia(72%) saturate(2640%) hue-rotate(332deg)
+    brightness(-53%) contrast(388%);
+}
+
+.ServicesItemWrapper:hover .Progress {
+  width: 100%;
+}
+
+.ServicesRight {
+  width: 50%;
+}
+
+.ServicesImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 32rem;
+}

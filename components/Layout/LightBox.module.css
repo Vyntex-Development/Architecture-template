@@ -1,0 +1,29 @@
+.BoxButton {
+  width: 6.375rem;
+  height: 6.375rem;
+  border-radius: 100%;
+  background-color: #e9e9e8;
+  border: 3px solid var(--primary-white);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BoxButton button {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+}
+
+.PlayButton {
+  position: absolute;
+  z-index: 0;
+  margin-left: 0.3rem;
+  margin-top: 0.3rem;
+}

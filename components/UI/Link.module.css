@@ -1,0 +1,46 @@
+.Link {
+  padding: 0.75rem 1rem;
+  border-radius: 2.5rem;
+}
+
+.Link a {
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.Logo {
+  padding: 0rem 0rem;
+  border-radius: 0rem;
+}
+
+.Dark a {
+  color: var(--primary-white);
+}
+
+.Dark {
+  padding: 0.75rem 1rem;
+  background-color: var(--black);
+  color: var(--primary-white);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+.Dark:hover {
+  background-color: #c8413e;
+}
+
+.Transparent {
+  background-color: transparent;
+  border: 1px solid #e9e9e8;
+  transition: all 0.5s ease-in-out;
+}
+
+.Transparent a {
+  color: var(--black);
+  transition: all 0.5s ease-in-out;
+}
+
+.Transparent:hover a {
+  color: var(--text-light);
+}

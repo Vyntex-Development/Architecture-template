@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
 /* Ako uvozimo nas FONT */
 
 /* @font-face {
@@ -14,8 +18,10 @@
 
 :root {
   --white: #ffffff;
-  --primary-white: ##fafafa;
-  --secondary-light: #dbf1fd;
+  --primary-white: #fffdfb;
+  --text-light: #b1b1b1;
+  --black: #27201c;
+  --light-gray: #f8f8f8;
 }
 
 html,
@@ -23,6 +29,8 @@ body {
   padding: 0;
   margin: 0;
   font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  background-color: var(--primary-white);
   /* line-height: 150%;
   letter-spacing: -0.02em; */
 }
@@ -44,49 +52,92 @@ h2,
 h3 {
   /* color: var(--primary-text); */
   margin: 0;
+  font-family: "Raleway", sans-serif;
+  color: var(--black);
 }
 
 h1 {
-  font-family: "MontExtraBold";
-  font-weight: 900;
-  font-size: 3.26em;
-  line-height: 110%;
-  letter-spacing: -0.04em;
+  font-weight: 400;
+  font-size: 4.44em;
+  line-height: 100%;
+  letter-spacing: -0.03em;
   margin-bottom: 1rem;
 }
 h2 {
-  font-size: 2.5em;
-  font-family: "MontBold";
-  line-height: 110%;
-  letter-spacing: -0.02em;
+  font-size: 2.77em;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.03em;
   margin-bottom: 1rem;
 }
 h3 {
-  font-size: 1.45em;
-  font-family: "MontBold";
-  line-height: 135%;
-  letter-spacing: -0.02em;
+  font-size: 1.11em;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.03em;
 }
 
 p {
-  font-family: "MontBook";
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: -0.02em;
-  color: var(--primary-text);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   font-size: 1rem;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+  color: var(--text-light);
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .p-large {
   font-size: 1.31rem;
-  line-height: 150%;
-  letter-spacing: -0.02em;
+  color: #7d7977;
 }
 
 .p-bold {
-  font-family: "MontBold";
-  font-weight: 800;
+  font-weight: 700;
+}
+.swiper-button-next {
+  background-image: url("/images/arrow_next.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-prev {
+  background-image: url("/images/arrow_prew.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+.swiper-button-next::after {
+  display: none;
+}
+.swiper-button-prev::after {
+  display: none;
+}
+.swiper-button-next {
+  right: 0 !important;
+  bottom: -15px !important;
+  top: auto !important;
+  width: 1rem !important;
+}
+
+.swiper-button-prev {
+  right: 32px !important;
+  bottom: -15px !important;
+  top: auto !important;
+  left: auto !important;
+  width: 1rem !important;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 0.90625em;
+  }
+}
+/* Min Font Size */
+@media screen and (max-width: 991px) {
+  body {
+    font-size: calc(0.20181634712411706vw + 0.625em);
+  }
 }

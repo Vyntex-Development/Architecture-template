@@ -4,13 +4,14 @@ class CustomDocument extends Document {
   render = () => (
     <Html lang="en">
       <Head>
-        {/* <link
-        //  OVDE MOZE DE SE LOAD-UJE NPR CSS FILE
-          rel="preload"
-          href="/fonts/VCR_OSD_MONO_1.001.ttf"
-          as="font"
-          crossOrigin="anonymous"
-        /> */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <body>
         <Main />

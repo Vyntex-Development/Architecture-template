@@ -1,0 +1,49 @@
+.ProcessWrapper {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1rem;
+  padding: 5rem 0;
+}
+.ProcessLeft {
+  width: 49%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1rem;
+}
+.ProcessImageOne {
+  position: relative;
+  width: 65%;
+  height: 32rem;
+}
+.ProcessImageTwo {
+  position: relative;
+  height: 32rem;
+  width: 34%;
+}
+.ProcessRight {
+  width: 50%;
+  padding-left: 8em;
+  padding-top: 1.62rem;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ProcessRight h2 {
+  margin-bottom: 0;
+}
+.ProcessItem {
+  margin-top: 2.5rem;
+  max-width: 27rem;
+}
+.ProcessItem:nth-of-type(3) {
+  margin-bottom: 2.5rem;
+}
+
+.ProcessItemTop {
+  display: flex;
+  justify-content: start;
+  column-gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}

@@ -3,8 +3,8 @@ import classes from "./Button.module.css";
 const Button = ({ children, colorType }) => {
   let colorClass;
 
-  if (colorType === "blue") {
-    colorClass = classes.Blue;
+  if (colorType === "dark") {
+    colorClass = classes.Dark;
   }
 
   if (colorType === "yellow") {
