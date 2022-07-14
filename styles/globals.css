@@ -156,22 +156,17 @@ nav {
   overflow: hidden;
   z-index: 0;
 }
-p {
-  margin: 0;
-  font-size: 32px;
-  font-weight: 700;
-  cursor: pointer;
-}
+
 .nav-item {
   position: relative;
   width: max-content;
   display: inline;
   overflow: hidden;
-  z-index: 5;
+  z-index: 10;
 }
-.nav-item p {
+.nav-item a {
   position: relative;
-  z-index: 2;
+  z-index: 10;
 }
 .nav-item img {
   position: fixed;
@@ -189,10 +184,6 @@ p {
   opacity: 1;
   z-index: 1;
   transition: all 0.5s ease-in-out;
-}
-.nav-item:hover > a {
-  z-index: 2;
-  color: white;
 }
 
 @media screen and (min-width: 1440px) {
