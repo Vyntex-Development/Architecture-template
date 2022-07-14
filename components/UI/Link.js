@@ -28,6 +28,10 @@ const Link = ({ children, href, type }) => {
     className = classes.White;
   }
 
+  if (type === "navOpen") {
+    className = classes.NavOpen;
+  }
+
   return (
     <div className={`${classes.Link} ${className}`}>
       <NextLink passHref href={href}>

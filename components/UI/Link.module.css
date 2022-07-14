@@ -80,3 +80,25 @@
 .White a {
   color: var(--black);
 }
+
+.NavOpen {
+  padding: 0 0;
+  padding-bottom: 2.5rem;
+  position: relative;
+  z-index: 5;
+}
+
+.NavOpen a {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: var(--text-light);
+  transition: all 0.5s ease-in-out;
+}
+
+.NavOpen:hover a {
+  color: var(--red);
+}
