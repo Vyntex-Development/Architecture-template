@@ -33,6 +33,7 @@ const Header = () => {
           </Link>
         </div>
       </div>
+      <div className={classes.NavOpen}></div>
     </header>
   );
 };

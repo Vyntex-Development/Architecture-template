@@ -42,6 +42,7 @@
 .Link:hover .LinkPhone {
   filter: invert(63%) sepia(72%) saturate(2640%) hue-rotate(332deg)
     brightness(-53%) contrast(388%);
+  opacity: 0.5;
 }
 
 .LinkPhone {

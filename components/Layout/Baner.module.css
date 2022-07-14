@@ -36,3 +36,9 @@
 .ContentWrapper p {
   margin-bottom: 1.5rem;
 }
+
+@media screen and (max-width: 1439px) {
+  .ContentWrapper {
+    max-width: 25rem;
+  }
+}

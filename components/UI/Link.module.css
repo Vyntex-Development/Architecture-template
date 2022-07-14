@@ -44,3 +44,39 @@
 .Transparent:hover a {
   color: var(--text-light);
 }
+
+.SmallFooter {
+  padding: 0 0;
+  text-decoration: underline;
+}
+
+.SmallFooter a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+  color: var(--text-light);
+}
+
+.Footer {
+  padding: 0 0;
+}
+
+.Footer a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 100%;
+  color: #7d7977;
+}
+
+.White {
+  background-color: var(--primary-white);
+}
+
+.White a {
+  color: var(--black);
+}

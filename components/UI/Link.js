@@ -20,8 +20,12 @@ const Link = ({ children, href, type }) => {
     className = classes.Footer;
   }
 
-  if (type === "bold") {
-    className = classes.Bold;
+  if (type === "smallfooter") {
+    className = classes.SmallFooter;
+  }
+
+  if (type === "white") {
+    className = classes.White;
   }
 
   return (
