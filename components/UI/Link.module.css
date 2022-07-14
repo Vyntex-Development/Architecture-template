@@ -117,3 +117,7 @@
 .NavOpen:hover a {
   color: var(--red);
 }
+
+.Social {
+  padding: 0 0;
+}

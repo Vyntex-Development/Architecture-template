@@ -27,7 +27,7 @@ const Footer = () => {
             </p>
             <div className={classes.SocialLinksWrapper}>
               <div className={classes.SocialWrapper}>
-                <a href="/">
+                <Link href="/" type="social">
                   <Image
                     layout="fixed"
                     objectFit="fill"
@@ -36,9 +36,9 @@ const Footer = () => {
                     height={24}
                     src="/images/facebook.png"
                   ></Image>
-                </a>
+                </Link>
 
-                <a href="/">
+                <Link href="/" type="social">
                   <Image
                     layout="fixed"
                     objectFit="fill"
@@ -47,8 +47,8 @@ const Footer = () => {
                     height={24}
                     src="/images/whats.png"
                   ></Image>
-                </a>
-                <a href="/">
+                </Link>
+                <Link href="/" type="social">
                   <Image
                     layout="fixed"
                     objectFit="fill"
@@ -57,7 +57,7 @@ const Footer = () => {
                     height={24}
                     src="/images/instagram.png"
                   ></Image>
-                </a>
+                </Link>
               </div>
               <div className={classes.SmallLinkWrapper}>
                 <Link href="/" type="smallfooter">

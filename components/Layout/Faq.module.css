@@ -117,3 +117,9 @@
 .ActiveQuestion .FaqIcon {
   transform: rotate(135deg);
 }
+
+@media screen and (max-width: 1439px) {
+  .FaqLeft {
+    max-width: 17.4rem;
+  }
+}

@@ -31,6 +31,9 @@ const Link = ({ children, href, type }) => {
   if (type === "navOpen") {
     className = classes.NavOpen;
   }
+  if (type === "social") {
+    className = classes.Social;
+  }
 
   return (
     <div className={`${classes.Link} ${className}`}>
