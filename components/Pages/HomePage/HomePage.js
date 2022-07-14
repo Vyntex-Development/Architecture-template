@@ -9,7 +9,7 @@ import Baner from "../../Layout/Baner";
 import { useState } from "react";
 
 const HomePage = () => {
-  const [activeFaq, setActiveFaq] = useState(null);
+  const [activeFaq, setActiveFaq] = useState("1");
   return (
     <>
       <Hero></Hero>

@@ -2,6 +2,7 @@
   padding: 5rem 0;
   display: flex;
   justify-content: space-between;
+  height: 38.25rem;
 }
 
 .FaqLeft {
@@ -49,6 +50,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .FaqRight {

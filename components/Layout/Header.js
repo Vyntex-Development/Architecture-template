@@ -2,8 +2,10 @@ import Image from "next/image";
 import classes from "./Header.module.css";
 import Link from "../UI/Link";
 import NavItem from "./NavItem";
+import { useState } from "react";
 
 const Header = () => {
+  const [navOpen, setNavOpen] = useState(false);
   return (
     <header className={classes.Header}>
       <div className="container">
@@ -21,7 +23,14 @@ const Header = () => {
               src="/images/logo.png"
             ></Image>
           </Link>
-          <div className={classes.MenuWrapper}>
+          <div
+            onClick={() => {
+              setNavOpen(!navOpen);
+            }}
+            className={`${classes.MenuWrapper} ${
+              navOpen ? classes.MenuOpen : ""
+            }`}
+          >
             <div></div>
             <div></div>
             <div></div>
@@ -34,7 +43,7 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <div className={classes.NavOpen}>
+      <div className={`${classes.Nav} ${navOpen ? classes.NavOpen : ""}`}>
         <NavItem navText="ABOUT" imgSrc="/images/about_nav.png" />
         <NavItem navText="PROCESS" imgSrc="/images/process_nav.png" />
         <NavItem navText="PROJECTS" imgSrc="/images/project_nav.png" />

@@ -75,14 +75,29 @@
 
 .White {
   background-color: var(--primary-white);
+  transition: all 0.5s ease-in-out;
 }
 
 .White a {
   color: var(--black);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 100%;
+  transition: all 0.5s ease-in-out;
 }
 
+.White:hover {
+  background-color: var(--red);
+}
+
+.White a:hover {
+  color: var(--primary-white);
+}
 .NavOpen {
-  padding: 0 0;
+  padding-left: 5rem;
+  padding-right: 5rem;
   padding-bottom: 2.5rem;
   position: relative;
   z-index: 5;
