@@ -1,7 +1,6 @@
 .HeroWrapper {
   display: flex;
   justify-content: space-between;
-
   padding-top: 7.5rem;
 }
 
@@ -37,4 +36,15 @@
 .LightBoxButton {
   position: absolute;
   z-index: 1;
+}
+
+@media screen and (max-width: 991px) {
+  .HeroWrapper {
+    flex-direction: column;
+    row-gap: 5rem;
+  }
+  .HeroLeft {
+    padding-top: 0;
+    width: 32rem;
+  }
 }

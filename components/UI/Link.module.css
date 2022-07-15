@@ -96,8 +96,6 @@
   color: var(--primary-white);
 }
 .NavOpen {
-  padding-left: 5rem;
-  padding-right: 5rem;
   padding-bottom: 2.5rem;
   position: relative;
   z-index: 5;

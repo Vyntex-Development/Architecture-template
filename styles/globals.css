@@ -158,7 +158,6 @@ nav {
 }
 
 .nav-item {
-  position: relative;
   width: max-content;
   display: inline;
   overflow: hidden;
@@ -169,8 +168,8 @@ nav {
 }
 .nav-item img {
   position: fixed;
-  width: 656px;
-  height: 400px;
+  width: 45em;
+  height: 27em;
   top: 50%;
   left: 50%;
   z-index: -1;
@@ -194,5 +193,13 @@ nav {
 @media screen and (max-width: 991px) {
   body {
     font-size: calc(0.20181634712411706vw + 0.625em);
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 32px;
   }
 }
