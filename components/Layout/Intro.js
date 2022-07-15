@@ -4,7 +4,7 @@ import classes from "./Intro.module.css";
 const Intro = () => {
   return (
     <div className={classes.IntroSection}>
-      <div className="container">
+      <div className={`${classes.Container} container`}>
         <div className={classes.IntroWrapper}>
           <div className={classes.ElipseWrapper}>
             <Image

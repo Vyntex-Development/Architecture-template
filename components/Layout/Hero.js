@@ -5,7 +5,7 @@ import CustomLightbox from "./LightBox";
 
 const Hero = () => {
   return (
-    <div className="container">
+    <div className={`${classes.Container} container`}>
       <div className={classes.HeroWrapper}>
         <div className={classes.HeroLeft}>
           <h1>An-awards winning archiects company</h1>

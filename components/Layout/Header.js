@@ -3,8 +3,14 @@ import classes from "./Header.module.css";
 import Link from "../UI/Link";
 import NavItem from "./NavItem";
 import { useState } from "react";
+import useMousePosition from "../../hooks/useMousePosition";
+import Title from "./Title";
+import Media from "./Media";
+import { data } from "../../data/nav-data";
 
 const Header = () => {
+  const { x, y } = useMousePosition();
+  const [activeIndex, setActiveIndex] = useState(-1);
   const [navOpen, setNavOpen] = useState(false);
   return (
     <header className={classes.Header}>
@@ -51,12 +57,36 @@ const Header = () => {
         }`}
       >
         <div className={classes.NavItemWrapper}>
-          <NavItem navText="ABOUT" imgSrc="/images/about_nav.png" />
-          <NavItem navText="PROCESS" imgSrc="/images/process_nav.png" />
-          <NavItem navText="PROJECTS" imgSrc="/images/project_nav.png" />
-          <NavItem navText="SERVICES" imgSrc="/images/services_nav.png" />
-          <NavItem navText="BLOG" imgSrc="/images/blog_nav.png" />
-          <NavItem navText="CONTACT" imgSrc="/images/contact_nav.png" />
+          <nav className="nav-wrapper">
+            <div className="project-list">
+              {data.map(({ title }, index) => {
+                return (
+                  <Title
+                    key={index}
+                    title={title}
+                    setActiveIndex={setActiveIndex}
+                    index={index}
+                  />
+                );
+              })}
+            </div>
+            <div className="project-media">
+              {data.map(({ imgUrl }, index) => {
+                const isActive = activeIndex === index;
+                const xPos = isActive ? x : 0;
+                const yPos = isActive ? y : 0;
+                return (
+                  <Media
+                    key={index}
+                    url={imgUrl}
+                    active={isActive}
+                    x={xPos}
+                    y={yPos}
+                  />
+                );
+              })}
+            </div>
+          </nav>
         </div>
       </div>
     </header>

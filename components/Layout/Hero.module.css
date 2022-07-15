@@ -54,6 +54,15 @@
   }
   .HeroImgWrapper {
     width: 100%;
-    height: 94vw;
+    height: 93.5vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Container {
+    padding: 0 0;
+  }
+  .HeroLeft {
+    padding: 0 5vw;
   }
 }

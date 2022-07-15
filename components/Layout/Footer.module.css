@@ -142,6 +142,7 @@
     margin-left: 0;
     margin-right: 0;
   }
+
   .Contact {
     display: none;
   }
@@ -154,6 +155,7 @@
 
   .ContactMobile p {
     margin-bottom: 0;
+    text-align: left;
   }
   .Link {
     margin-top: 0;

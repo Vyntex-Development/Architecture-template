@@ -118,4 +118,25 @@
   .Description {
     -webkit-line-clamp: 3;
   }
+  .BlogCardsWrapper {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .BlogCard {
+    width: 100%;
+  }
+  .ArrowImg {
+    display: block;
+  }
+  .Margin {
+    margin-right: auto;
+    margin-left: 2.3rem;
+  }
+  .BlogCard {
+    background-color: transparent;
+  }
+
+  .BlogImage {
+    height: 50vw;
+  }
 }
