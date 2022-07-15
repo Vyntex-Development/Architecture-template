@@ -70,6 +70,9 @@ const Faq = ({ setActiveFaq, activeFaq }) => {
                 aliquet lorem nisi sed leo iaculis placerat elit.
               </p>
             </div>
+            <div className={classes.ProgressWrapper}>
+              <div className={classes.Progress}></div>
+            </div>
           </div>
           <div className={classes.Faq}>
             <div
@@ -107,6 +110,9 @@ const Faq = ({ setActiveFaq, activeFaq }) => {
                 mauris nec eleifend ultricies, nunc sapien hendrerit ligula, ac
                 aliquet lorem nisi sed leo iaculis placerat elit.
               </p>
+            </div>
+            <div className={classes.ProgressWrapper}>
+              <div className={classes.Progress}></div>
             </div>
           </div>
           <div className={classes.Faq}>
@@ -146,6 +152,9 @@ const Faq = ({ setActiveFaq, activeFaq }) => {
                 aliquet lorem nisi sed leo iaculis placerat elit.
               </p>
             </div>
+            <div className={classes.ProgressWrapper}>
+              <div className={classes.Progress}></div>
+            </div>
           </div>
           <div className={classes.Faq}>
             <div
@@ -184,6 +193,9 @@ const Faq = ({ setActiveFaq, activeFaq }) => {
                 aliquet lorem nisi sed leo iaculis placerat elit.
               </p>
             </div>
+            <div className={classes.ProgressWrapper}>
+              <div className={classes.Progress}></div>
+            </div>
           </div>
           <div className={classes.Faq}>
             <div
@@ -221,6 +233,9 @@ const Faq = ({ setActiveFaq, activeFaq }) => {
                 mauris nec eleifend ultricies, nunc sapien hendrerit ligula, ac
                 aliquet lorem nisi sed leo iaculis placerat elit.
               </p>
+            </div>
+            <div className={classes.ProgressWrapper}>
+              <div className={classes.Progress}></div>
             </div>
           </div>
         </div>

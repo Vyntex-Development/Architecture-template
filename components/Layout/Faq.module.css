@@ -60,7 +60,6 @@
 .Faq {
   width: 100%;
   cursor: pointer;
-  border-bottom: 1px solid rgba(119, 123, 125, 0.2);
 }
 
 .FaqQuestionWrapper {
@@ -116,6 +115,23 @@
 }
 .ActiveQuestion .FaqIcon {
   transform: rotate(135deg);
+}
+
+.ProgressWrapper {
+  width: 100%;
+  background-color: rgba(119, 123, 125, 0.2);
+  height: 1px;
+}
+
+.Progress {
+  height: 100%;
+  background-color: var(--black);
+  width: 0%;
+  transition: all 0.5s ease-in-out;
+}
+
+.Faq:hover .Progress {
+  width: 100%;
 }
 
 @media screen and (max-width: 1439px) {

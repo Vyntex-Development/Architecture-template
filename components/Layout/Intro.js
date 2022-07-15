@@ -16,6 +16,9 @@ const Intro = () => {
               src="/images/arrow.png"
             ></Image>
           </div>
+          <div>
+            <h2>Introduction</h2>
+          </div>
           <div className={classes.IntroContent}>
             <p>
               Nullam egestas justo ac arcu dapibus volutpat. Sed ultrices,
