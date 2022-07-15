@@ -89,6 +89,15 @@
   position: relative;
 }
 
+.NavOpen .Media {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
 @media screen and (max-width: 1300px) {
   .MenuOpen > div:nth-of-type(3) {
     transform: rotate(45deg) translate(-2px, -3px);

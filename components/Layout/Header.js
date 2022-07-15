@@ -70,7 +70,7 @@ const Header = () => {
                 );
               })}
             </div>
-            <div className="project-media">
+            <div className={`${classes.Media} project-media`}>
               {data.map(({ imgUrl }, index) => {
                 const isActive = activeIndex === index;
                 const xPos = isActive ? x : 0;
