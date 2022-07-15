@@ -35,12 +35,14 @@ const Header = () => {
             <div></div>
             <div></div>
           </div>
-          <Link
-            type="dark"
-            href="https://nextjs.org/docs/basic-features/font-optimization"
-          >
-            FREE CONSULTATION
-          </Link>
+          <div className={classes.LinkDark}>
+            <Link
+              type="dark"
+              href="https://nextjs.org/docs/basic-features/font-optimization"
+            >
+              FREE CONSULTATION
+            </Link>
+          </div>
         </div>
       </div>
       <div

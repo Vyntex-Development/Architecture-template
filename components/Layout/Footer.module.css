@@ -59,13 +59,16 @@
 }
 
 .FooterRight {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.Contact {
   width: 11rem;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  margin-left: 4rem;
-  margin-right: 4rem;
 }
 
 .FooterRight p {
@@ -102,4 +105,65 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.SocialLinksWrapperMobile {
+  display: none;
+}
+
+.ContactMobile {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .FooterWrapper {
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-bottom: 35px;
+  }
+  .SocialLinksWrapperMobile {
+    display: flex;
+    max-width: 32rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .SocialLinksWrapper {
+    display: none;
+  }
+
+  .FooterLeft {
+    margin-bottom: 40px;
+  }
+  .FooterMiddle {
+    margin-bottom: 5rem;
+  }
+  .FooterRight {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .Contact {
+    display: none;
+  }
+  .ContactMobile {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-bottom: 5rem;
+  }
+
+  .ContactMobile p {
+    margin-bottom: 0;
+  }
+  .Link {
+    margin-top: 0;
+  }
+
+  .ContactMobileWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 32rem;
+    margin-bottom: 1rem;
+  }
 }

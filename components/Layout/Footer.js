@@ -105,23 +105,94 @@ const Footer = () => {
             </div>
           </div>
           <div className={classes.FooterRight}>
-            <p>Are you getting the most out of your project?</p>
-            <Link href="/" type="white">
-              Ask us anything
-            </Link>
-            <a className={classes.Link} href="telto:6317806123" type="tel">
-              <div className={classes.LinkPhone}>
-                <Image
-                  layout="fixed"
-                  objectFit="fill"
-                  alt="icon"
-                  width={16}
-                  height={16}
-                  src="/images/footer_phone.png"
-                ></Image>
+            <div className={classes.Contact}>
+              <p>Are you getting the most out of your project?</p>
+
+              <Link href="/" type="white">
+                Ask us anything
+              </Link>
+              <a className={classes.Link} href="telto:6317806123" type="tel">
+                <div className={classes.LinkPhone}>
+                  <Image
+                    layout="fixed"
+                    objectFit="fill"
+                    alt="icon"
+                    width={16}
+                    height={16}
+                    src="/images/footer_phone.png"
+                  ></Image>
+                </div>
+                631-780-6123
+              </a>
+            </div>
+            <div className={classes.ContactMobile}>
+              <div className={classes.ContactMobileWrapper}>
+                <p>Are you getting the most out of your project?</p>
+
+                <Link href="/" type="white">
+                  Ask us anything
+                </Link>
               </div>
-              631-780-6123
-            </a>
+              <a className={classes.Link} href="telto:6317806123" type="tel">
+                <div className={classes.LinkPhone}>
+                  <Image
+                    layout="fixed"
+                    objectFit="fill"
+                    alt="icon"
+                    width={16}
+                    height={16}
+                    src="/images/footer_phone.png"
+                  ></Image>
+                </div>
+                631-780-6123
+              </a>
+            </div>
+            <div className={classes.SocialLinksWrapperMobile}>
+              <div className={classes.SocialWrapper}>
+                <Link href="/" type="social">
+                  <Image
+                    layout="fixed"
+                    objectFit="fill"
+                    alt="icon"
+                    width={23}
+                    height={24}
+                    src="/images/facebook.png"
+                  ></Image>
+                </Link>
+
+                <Link href="/" type="social">
+                  <Image
+                    layout="fixed"
+                    objectFit="fill"
+                    alt="icon"
+                    width={24}
+                    height={24}
+                    src="/images/whats.png"
+                  ></Image>
+                </Link>
+                <Link href="/" type="social">
+                  <Image
+                    layout="fixed"
+                    objectFit="fill"
+                    alt="icon"
+                    width={24}
+                    height={24}
+                    src="/images/instagram.png"
+                  ></Image>
+                </Link>
+              </div>
+              <div className={classes.SmallLinkWrapper}>
+                <Link href="/" type="smallfooter">
+                  Privacy
+                </Link>
+                <Link href="/" type="smallfooter">
+                  Terms
+                </Link>
+                <Link href="/" type="smallfooter">
+                  Cookies
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>

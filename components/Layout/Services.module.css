@@ -78,3 +78,18 @@
   width: 100%;
   height: 32rem;
 }
+
+@media screen and (max-width: 991px) {
+  .ServicesWrapper {
+    flex-direction: column;
+    row-gap: 5rem;
+  }
+
+  .ServicesLeft {
+    padding-top: 0;
+    margin-left: 0;
+  }
+  .ServicesRight {
+    width: 100%;
+  }
+}

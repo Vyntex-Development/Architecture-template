@@ -100,3 +100,13 @@
     transition: all 0.5s ease-in-out;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .LinkDark {
+    display: none;
+  }
+  .MenuWrapper {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}

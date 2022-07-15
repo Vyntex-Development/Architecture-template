@@ -139,3 +139,23 @@
     max-width: 17.4rem;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .FaqWrapper {
+    flex-direction: column;
+    row-gap: 5rem;
+    height: 897px;
+  }
+  .FaqLeft {
+    width: auto;
+  }
+  .FaqLeft h2 {
+    width: 16.4rem;
+  }
+  .FaqLeft p {
+    width: 25rem;
+  }
+  .FaqRight {
+    width: 100%;
+  }
+}

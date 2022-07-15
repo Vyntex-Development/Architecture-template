@@ -43,3 +43,15 @@
   line-height: 100%;
   color: var(--text-light);
 }
+
+@media screen and (max-width: 991px) {
+  .TestimonialsWrapper {
+    padding: 5rem 2rem;
+    flex-direction: column;
+  }
+
+  .TestimonialsSlider {
+    width: 100%;
+    margin-top: 40px;
+  }
+}

@@ -30,7 +30,7 @@ const Blog = () => {
               </div>
               <div className={classes.BlogContentWrapper}>
                 <h3>Creating Architectural Value through Aesthetics</h3>
-                <p>
+                <p className={classes.Description}>
                   Donec efficitur dolor et odio tempus, nec lobortis nunc
                   ultricies. Mauris convallis turpis quis imperdiet finibus...
                 </p>
@@ -78,7 +78,7 @@ const Blog = () => {
               </div>
               <div className={classes.BlogContentWrapper}>
                 <h3>Top 300 US Architecture Firms YOU SHOULD KNOW IN 2022</h3>
-                <p>
+                <p className={classes.Description}>
                   Pellentesque rutrum sit amet purus vel auctor. Proin sit amet
                   lacus nec dui maximus posuere vitae vitae...
                 </p>
@@ -126,7 +126,7 @@ const Blog = () => {
               </div>
               <div className={classes.BlogContentWrapper}>
                 <h3>Stone-Clad Monotony at Norway &apos;s National Museum</h3>
-                <p>
+                <p className={classes.Description}>
                   Maecenas efficitur magna nulla, nec volutpat sem convallis
                   quis. Nam molestie venenatis malesuada...
                 </p>

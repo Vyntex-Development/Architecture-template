@@ -42,3 +42,12 @@
     max-width: 25rem;
   }
 }
+@media screen and (max-width: 991px) {
+  .BanerContent {
+    padding-left: 0;
+    justify-content: center;
+  }
+  .ContentWrapper {
+    max-width: 20.5rem;
+  }
+}
