@@ -19,6 +19,16 @@ const CustomLightbox = () => {
             src="/images/play.png"
           ></Image>
         </div>
+        <div className={classes.PlayButtonMobile}>
+          <Image
+            layout="fixed"
+            objectFit="fill"
+            alt="icon"
+            width={16}
+            height={14}
+            src="/images/play_mobile.png"
+          ></Image>
+        </div>
 
         <button onClick={() => setToggler(!toggler)}></button>
       </div>

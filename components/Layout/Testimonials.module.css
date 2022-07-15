@@ -37,7 +37,7 @@
   margin-bottom: 0.5rem;
 }
 
-.SliderNameWrapper p:nth-of-type(2) {
+.SliderNameWrapper p {
   font-weight: 300;
   font-size: 0.875rem;
   line-height: 100%;
@@ -53,5 +53,18 @@
   .TestimonialsSlider {
     width: 100%;
     margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Container {
+    padding: 0 0;
+  }
+
+  .TestimonialsWrapper {
+    padding: 5rem 5vw;
+  }
+  .SliderTeamWrapper {
+    padding-bottom: 64px;
   }
 }

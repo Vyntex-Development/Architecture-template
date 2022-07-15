@@ -93,3 +93,20 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .Container {
+    padding: 0 0;
+  }
+
+  .ServicesWrapper {
+    padding-bottom: 0;
+  }
+  .ServicesLeft {
+    padding: 0 5vw;
+    width: auto;
+  }
+  .ServicesImageWrapper {
+    height: 110vw;
+  }
+}

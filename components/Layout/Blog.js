@@ -5,13 +5,15 @@ import Link from "../UI/Link";
 const Blog = () => {
   return (
     <div className={classes.BlogSection}>
-      <div className="container">
+      <div className={`${classes.Container} container`}>
         <div className={classes.BlogWrapper}>
           <div className={classes.BlogHeading}>
             <h2>Latest Articles</h2>
-            <Link href="/" type="transparent">
-              READ ALL
-            </Link>
+            <div className={classes.BlogButton}>
+              <Link href="/" type="transparent">
+                READ ALL
+              </Link>
+            </div>
           </div>
           <div className={classes.BlogCardsWrapper}>
             <a
@@ -158,6 +160,11 @@ const Blog = () => {
                 </div>
               </div>
             </a>
+            <div className={classes.BlogButtonMobile}>
+              <Link href="/" type="transparent">
+                READ ALL
+              </Link>
+            </div>
           </div>
         </div>
       </div>

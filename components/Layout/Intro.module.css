@@ -65,4 +65,21 @@
     padding-left: 5vw;
     padding-right: 5vw;
   }
+  .IntroContent {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .IntroImagesWrapper {
+    flex-direction: column;
+    row-gap: 0.5rem;
+    padding-bottom: 0;
+  }
+  .IntroImageOne {
+    width: 100%;
+    height: 50vw;
+  }
+  .IntroImageTwo {
+    width: 100%;
+    height: 140vw;
+  }
 }

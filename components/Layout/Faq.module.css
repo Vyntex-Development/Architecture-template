@@ -159,3 +159,25 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .FaqWrapper {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .FaqLeft p {
+    width: auto;
+  }
+
+  .FaqLeft {
+    max-width: none;
+  }
+  .FaqQuestionWrapper p {
+    max-width: 271px;
+  }
+  .FaqWrapper {
+    height: 1071px;
+  }
+}

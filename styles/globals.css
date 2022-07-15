@@ -187,6 +187,10 @@ p {
   display: flex;
   flex-direction: column;
 }
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
 
 @media screen and (min-width: 1440px) {
   body {
@@ -212,5 +216,17 @@ p {
   .container {
     padding-left: 5vw;
     padding-right: 5vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-button-next {
+    left: 32px !important;
+    bottom: 0 !important;
+  }
+
+  .swiper-button-prev {
+    left: 0px !important;
+    bottom: 0 !important;
   }
 }

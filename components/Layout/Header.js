@@ -14,7 +14,7 @@ const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
   return (
     <header className={classes.Header}>
-      <div className="container">
+      <div className={`${classes.Container} container`}>
         <div className={classes.NavWrapper}>
           <Link
             type="logo"

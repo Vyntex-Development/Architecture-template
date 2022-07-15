@@ -10,7 +10,7 @@ import "swiper/css/scrollbar";
 const Testimonials = () => {
   return (
     <div className={classes.TestimonialsSection}>
-      <div className="container">
+      <div className={`${classes.Container} container`}>
         <div className={classes.TestimonialsWrapper}>
           <div className={classes.TestimonialsLeft}>
             <h2>Testimonials</h2>

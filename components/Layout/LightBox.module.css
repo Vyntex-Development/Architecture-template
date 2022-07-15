@@ -27,3 +27,19 @@
   margin-left: 0.3rem;
   margin-top: 0.3rem;
 }
+.PlayButtonMobile {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .BoxButton {
+    width: 66px;
+    height: 66px;
+  }
+  .PlayButton {
+    display: none;
+  }
+  .PlayButtonMobile {
+    display: flex;
+    margin-left: 0.2rem;
+  }
+}

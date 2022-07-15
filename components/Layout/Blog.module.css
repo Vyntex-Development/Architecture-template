@@ -92,6 +92,10 @@
   overflow: hidden;
 }
 
+.BlogButtonMobile {
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
   .BlogImage {
     height: 10rem;
@@ -115,6 +119,12 @@
 }
 
 @media screen and (max-width: 767px) {
+  .Container {
+    padding: 0 0;
+  }
+  .BlogHeading {
+    padding: 0 5vw;
+  }
   .Description {
     -webkit-line-clamp: 3;
   }
@@ -138,5 +148,32 @@
 
   .BlogImage {
     height: 50vw;
+  }
+
+  .BlogButton {
+    display: none;
+  }
+
+  .BlogButtonMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .BlogButtonMobile div {
+    width: 100%;
+    text-align: center;
+  }
+  .BlogWrapper {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .BlogImage {
+    height: 70vw;
   }
 }

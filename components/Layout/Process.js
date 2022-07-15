@@ -3,7 +3,7 @@ import Link from "../UI/Link";
 import classes from "./Process.module.css";
 const Process = () => {
   return (
-    <div className="container">
+    <div className={`${classes.Container} container`}>
       <div className={classes.ProcessWrapper}>
         <div className={classes.ProcessLeft}>
           <div className={classes.ProcessImageOne}>

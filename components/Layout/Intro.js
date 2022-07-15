@@ -46,7 +46,7 @@ const Intro = () => {
               layout="fill"
               objectFit="cover"
               alt="hero"
-              src="/images/intro01.png"
+              src="/images/intro02.png"
             ></Image>
           </div>
         </div>

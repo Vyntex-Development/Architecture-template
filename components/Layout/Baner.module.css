@@ -62,4 +62,11 @@
   .BanerContent {
     width: 100%;
   }
+  .BanerImage {
+    height: 110vw;
+  }
+  .BanerContent {
+    padding: 5rem 5vw;
+    justify-content: start;
+  }
 }

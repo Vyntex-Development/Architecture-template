@@ -64,5 +64,17 @@
   }
   .HeroLeft {
     padding: 0 5vw;
+    width: auto;
+  }
+
+  .HeroLeft p {
+    width: auto;
+  }
+  .HeroImgWrapper {
+    height: 103.5vw;
+  }
+
+  .ButtonWrapper {
+    margin-top: 24px;
   }
 }
