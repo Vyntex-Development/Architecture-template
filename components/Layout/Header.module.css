@@ -66,25 +66,35 @@
   overflow: hidden;
 }
 
-.NavOpen div:nth-of-type(1) div a {
-  animation: Linkshow 2s;
+.NavClose {
+  transition: all 1.3s 0.5s ease-in-out !important;
 }
 
-@keyframes Linkshow {
-  0% {
-    opacity: 0;
-    transform: translateY(-64px);
-  }
+.NavOpen .List div div {
+  animation: mymove 1.5s 0.8s ease-in-out;
+}
 
-  80% {
-    opacity: 0.8;
+.NavClose .List div div {
+  animation: mymoveclose 1s ease-in-out;
+}
+
+@keyframes mymove {
+  from {
+    bottom: -300px;
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
+  to {
+    bottom: 0px;
   }
 }
 
+@keyframes mymoveclose {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: -300px;
+  }
+}
 .NavItemWrapper {
   position: relative;
   width: 100%;

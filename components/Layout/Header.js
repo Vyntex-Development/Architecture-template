@@ -58,7 +58,7 @@ const Header = () => {
       >
         <div className={classes.NavItemWrapper}>
           <nav className="nav-wrapper">
-            <div className="project-list">
+            <div className={`${classes.List} project-list`}>
               {data.map(({ title }, index) => {
                 return (
                   <Title
