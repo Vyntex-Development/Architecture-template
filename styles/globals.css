@@ -224,6 +224,10 @@ p {
     padding-left: 5vw;
     padding-right: 5vw;
   }
+
+  .is-active {
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -235,5 +239,9 @@ p {
   .swiper-button-prev {
     left: 0px !important;
     bottom: 0 !important;
+  }
+
+  .project-item {
+    height: 60px;
   }
 }

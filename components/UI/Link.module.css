@@ -97,6 +97,7 @@
 }
 .NavOpen {
   padding-bottom: 1.5rem;
+  padding-top: 0;
   position: relative;
   z-index: 5;
   text-align: center;
@@ -120,4 +121,13 @@
 
 .Social {
   padding: 0 0;
+}
+
+@media screen and (max-width: 767px) {
+  .NavOpen a {
+    font-size: 32px;
+  }
+  .NavOpen {
+    padding-top: 0;
+  }
 }
