@@ -163,14 +163,12 @@ p {
   cursor: pointer;
 }
 .project-media img {
-  width: 45em;
-  height: 27em;
   position: absolute;
   opacity: 0;
   width: auto;
   height: auto;
-  max-width: 45em;
-  max-height: 27em;
+  max-width: 656px;
+  max-height: 400px;
   object-fit: contain;
   pointer-events: none;
   z-index: 3;
