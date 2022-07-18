@@ -244,4 +244,8 @@ p {
   .project-item {
     height: 60px;
   }
+  .nav-wrapper {
+    justify-content: start;
+    padding-top: 84px;
+  }
 }
