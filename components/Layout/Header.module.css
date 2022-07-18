@@ -49,7 +49,7 @@
   width: 100%;
   height: 100vh;
   background-color: var(--light-gray);
-  padding-top: 7.5rem;
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,11 +63,11 @@
 .NavOpen {
   opacity: 1;
   top: 0;
+  overflow: hidden;
 }
 
 .NavOpen div:nth-of-type(1) div a {
   animation: Linkshow 2s;
-  background-color: red;
 }
 
 @keyframes Linkshow {
@@ -87,8 +87,12 @@
 
 .NavItemWrapper {
   position: relative;
+  width: 100%;
 }
 
+.NavOpen {
+  background-color: #f8f8f8;
+}
 .NavOpen .Media {
   position: fixed;
   top: 0;

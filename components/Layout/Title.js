@@ -1,3 +1,5 @@
+import Link from "../UI/Link";
+
 const Title = ({ title, setActiveIndex, index }) => {
   return (
     <div
@@ -9,9 +11,9 @@ const Title = ({ title, setActiveIndex, index }) => {
         setActiveIndex(-1);
       }}
     >
-      <h3 className="project-title">
+      <Link href="/" type="navOpen" className="project-title">
         <span>{title}</span>
-      </h3>
+      </Link>
     </div>
   );
 };

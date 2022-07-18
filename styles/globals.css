@@ -134,19 +134,18 @@ p {
 .nav-wrapper {
   min-height: 100vh;
   min-width: 100%;
-  background-color: #eee;
   padding: 0 100px;
   display: flex;
   align-items: center;
   position: relative;
+  flex-direction: column;
+  justify-content: center;
 }
 .project-list:hover .project-item {
   opacity: 0.1;
 }
 .project-list .project-item {
   display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
   position: relative;
 }
 .project-title {
@@ -164,14 +163,14 @@ p {
   cursor: pointer;
 }
 .project-media img {
-  width: 400px;
-  height: 250px;
+  width: 45em;
+  height: 27em;
   position: absolute;
   opacity: 0;
   width: auto;
   height: auto;
-  max-width: 60%;
-  max-height: 50%;
+  max-width: 45em;
+  max-height: 27em;
   object-fit: contain;
   pointer-events: none;
   z-index: 3;
@@ -186,10 +185,15 @@ p {
 .project-list {
   display: flex;
   flex-direction: column;
+  margin-top: -4rem;
 }
 :focus {
   outline-color: transparent;
   outline-style: none;
+}
+
+.project-list:hover .project-item {
+  opacity: 1;
 }
 
 @media screen and (min-width: 1440px) {
