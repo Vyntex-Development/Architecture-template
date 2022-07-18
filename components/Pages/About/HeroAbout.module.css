@@ -1,0 +1,139 @@
+.HeroWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 7.5rem;
+  padding-bottom: 5.5rem;
+}
+
+.HeroLeft {
+  padding-top: 8rem;
+  width: 34rem;
+}
+
+.HeroLeft p {
+  width: 27rem;
+}
+
+.ButtonWrapper {
+  display: flex;
+  margin-top: 2.5rem;
+  column-gap: 1rem;
+}
+
+.HeroRight {
+  width: 50%;
+  padding-right: 7em;
+  position: relative;
+}
+
+.HeroImgWrapper {
+  position: relative;
+  width: 34rem;
+  height: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HeroAboutImgWrapperTop {
+  position: absolute;
+  width: 15rem;
+  height: 16.5rem;
+  top: -2.5rem;
+  right: 6.3em;
+  background-color: var(--primary-white);
+  padding: 1rem;
+}
+.HeroAboutImgWrapperBottom {
+  position: absolute;
+  width: 16rem;
+  height: 18rem;
+  bottom: -3rem;
+  left: -8rem;
+  background-color: var(--primary-white);
+  padding: 1.5rem;
+}
+.Border {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1439px) {
+  .HeroRight {
+    padding-right: 2em;
+  }
+  .HeroAboutImgWrapperTop {
+    right: 1.3em;
+  }
+}
+@media screen and (max-width: 991px) {
+  .HeroWrapper {
+    flex-direction: column;
+    row-gap: 5rem;
+    align-items: flex-start;
+  }
+  .HeroLeft {
+    padding-top: 0;
+    width: 32rem;
+  }
+
+  .HeroRight {
+    width: 100%;
+    padding-right: 0;
+  }
+  .HeroImgWrapper {
+    width: 100%;
+    height: 93.5vw;
+  }
+
+  .HeroAboutImgWrapperTop {
+    right: -3px;
+  }
+  .HeroAboutImgWrapperBottom {
+    left: -5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Container {
+    padding: 0 0;
+  }
+  .HeroLeft {
+    padding: 0 5vw;
+    width: auto;
+  }
+
+  .HeroLeft p {
+    width: auto;
+  }
+  .HeroImgWrapper {
+    height: 103.5vw;
+  }
+
+  .ButtonWrapper {
+    margin-top: 24px;
+  }
+  .HeroAboutImgWrapperBottom {
+    padding: 12px;
+    width: 128px;
+    height: 140px;
+    left: 0px;
+  }
+  .HeroAboutImgWrapperTop {
+    padding: 8px;
+    width: 136px;
+    height: 153px;
+    top: -21px;
+  }
+
+  .HeroWrapper {
+    flex-direction: column-reverse;
+  }
+  .HeroImgWrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: 7px;
+  }
+}

@@ -1,0 +1,66 @@
+.MissionGray {
+  background-color: var(--light-gray);
+}
+
+.MissionWrapper {
+  padding-left: 7em;
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.MissionWrapperBottom {
+  padding-left: 7em;
+  padding-top: 7.5rem;
+  display: flex;
+  justify-content: space-between;
+  height: 33.5rem;
+  padding-bottom: 5rem;
+}
+
+.MissionImg {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  top: -18.875rem;
+}
+.MissionLeft {
+  width: 34rem;
+}
+
+.MissionLarge {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+  color: #7d7977;
+  padding-bottom: 17rem;
+}
+
+.MissionLarge span {
+  color: var(--black);
+}
+
+.MissionRight {
+  width: 50%;
+}
+
+.MissionRight div {
+  max-width: 27rem;
+}
+
+.MissionRight p {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1439px) {
+  .MissionLeft {
+    max-width: 32rem;
+  }
+  .MissionRight {
+    width: 27rem;
+    margin-right: 4em;
+  }
+}
