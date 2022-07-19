@@ -7,7 +7,7 @@ export const data = [
   {
     title: "PROCESS",
     imgUrl: "images/process_nav.png",
-    url: "https://architecture-template.vercel.app/about",
+    url: "https://architecture-template.vercel.app/process",
   },
   {
     title: "PROJECTS",
