@@ -16,10 +16,7 @@ const Header = () => {
     <header className={classes.Header}>
       <div className={`${classes.Container} container`}>
         <div className={classes.NavWrapper}>
-          <Link
-            type="logo"
-            href="https://nextjs.org/docs/basic-features/font-optimization"
-          >
+          <Link type="logo" href="https://architecture-template.vercel.app/">
             <Image
               layout="fixed"
               objectFit="contain"

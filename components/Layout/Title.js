@@ -11,7 +11,7 @@ const Title = ({ title, setActiveIndex, index, url }) => {
         setActiveIndex(-1);
       }}
     >
-      <Link href={url} type="navOpen" className="project-title">
+      <Link passHref={true} href={url} type="navOpen" className="project-title">
         {title}
       </Link>
     </div>
