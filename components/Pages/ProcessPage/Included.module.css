@@ -1,0 +1,30 @@
+.IncludedWrapper {
+  padding-top: 5rem;
+  padding-left: 7em;
+  padding-right: 7em;
+  padding-bottom: 5rem;
+}
+.IncludedItems {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 3rem;
+  column-gap: 4.5rem;
+}
+.ProcessItemTop {
+  display: flex;
+  justify-content: start;
+  column-gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.ProcessItemTop h3 {
+  line-height: 100%;
+}
+
+@media screen and (max-width: 1439px) {
+  .IncludedWrapper {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+}

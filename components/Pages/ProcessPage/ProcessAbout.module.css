@@ -1,0 +1,35 @@
+.ProccesAboutSection {
+  background-color: var(--light-gray);
+  height: 30rem;
+}
+
+.ProccesAboutWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.AboutImgWrapper {
+  position: relative;
+  width: 34rem;
+  height: 35rem;
+  top: -5rem;
+}
+
+.AboutRight {
+  width: 50%;
+  align-items: center;
+  display: flex;
+}
+.AboutRightWrapper {
+  max-width: 27rem;
+}
+
+.AboutRightWrapper h2 {
+  max-width: 21rem;
+}
+
+@media screen and (max-width: 1439px) {
+  .AboutImgWrapper {
+    width: 32rem;
+  }
+}
