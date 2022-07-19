@@ -1,0 +1,56 @@
+.TeamWrapper {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.TeamSlider {
+  margin-top: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  overflow: hidden;
+  width: 101.5%;
+  margin-left: -0.75%;
+}
+
+.TeamImgWrapper {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.TeamImg {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.TeamCard:hover .TeamImg {
+  transform: scale(1.05);
+}
+
+.TeamCard h3 {
+  line-height: 100%;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.TeamCard p {
+  line-height: 100%;
+  font-size: 0.875rem;
+  color: var(--black);
+}
+
+@media screen and (max-width: 991px) {
+  .TeamSlider {
+    width: 101%;
+    margin-left: -0.5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .TeamSlider {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+  }
+}

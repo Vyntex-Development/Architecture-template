@@ -131,6 +131,43 @@ p {
   width: 1rem !important;
 }
 
+.team-slider {
+  overflow: visible !important;
+}
+
+.team-slider .swiper-button-prev {
+  background-image: url("/images/arrow_team_light.png");
+  width: 2rem !important;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: auto !important;
+  left: -1rem !important;
+  top: 50% !important;
+  transition: all 0.3s ease-in-out;
+}
+.team-slider .swiper-button-next {
+  background-image: url("/images/arrow_team_light.png");
+  transform: rotate(180deg);
+  width: 2rem !important;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: auto !important;
+  right: -1rem !important;
+  top: 50% !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.team-slider .swiper-button-prev:hover {
+  background-image: url("/images/arrow_left_black.png");
+}
+
+.team-slider .swiper-button-next:hover {
+  background-image: url("/images/arrow_left_black.png");
+}
 .nav-wrapper {
   min-height: 100vh;
   min-width: 100%;
@@ -239,6 +276,16 @@ p {
   .swiper-button-prev {
     left: 0px !important;
     bottom: 0 !important;
+  }
+
+  .team-slider .swiper-button-next {
+    right: 0 !important;
+    left: auto !important;
+  }
+
+  .team-slider .swiper-button-prev {
+    left: 0 !important;
+    right: auto !important;
   }
 
   .project-item {

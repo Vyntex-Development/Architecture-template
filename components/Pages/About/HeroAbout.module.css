@@ -67,12 +67,20 @@
   .HeroAboutImgWrapperTop {
     right: 1.3em;
   }
+  .HeroImgWrapper {
+    height: 30rem;
+  }
+  .HeroWrapper {
+    height: 95vh;
+  }
 }
 @media screen and (max-width: 991px) {
   .HeroWrapper {
     flex-direction: column;
     row-gap: 5rem;
     align-items: flex-start;
+    padding-bottom: 5rem;
+    height: auto;
   }
   .HeroLeft {
     padding-top: 0;

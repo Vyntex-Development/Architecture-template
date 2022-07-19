@@ -5,7 +5,7 @@ const Mission = () => {
   return (
     <div>
       <div className={classes.MissionGray}>
-        <div className="container">
+        <div className={`${classes.Container} container`}>
           <div className={classes.MissionWrapper}>
             <div className={classes.MissionLeft}>
               <p className={classes.MissionLarge}>
@@ -19,7 +19,7 @@ const Mission = () => {
         </div>
       </div>
       <div>
-        <div className="container">
+        <div className={`${classes.Container} container`}>
           <div className={classes.MissionWrapperBottom}>
             <div className={classes.MissionLeft}>
               <div className={classes.MissionImg}>
