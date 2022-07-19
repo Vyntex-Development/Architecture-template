@@ -1,6 +1,6 @@
 import Link from "../UI/Link";
 
-const Title = ({ title, setActiveIndex, index }) => {
+const Title = ({ title, setActiveIndex, index, url }) => {
   return (
     <div
       className="project-item"
@@ -11,8 +11,8 @@ const Title = ({ title, setActiveIndex, index }) => {
         setActiveIndex(-1);
       }}
     >
-      <Link href="/" type="navOpen" className="project-title">
-        <span>{title}</span>
+      <Link href={url} type="navOpen" className="project-title">
+        {title}
       </Link>
     </div>
   );

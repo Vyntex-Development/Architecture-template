@@ -59,13 +59,14 @@ const Header = () => {
         <div className={classes.NavItemWrapper}>
           <nav className="nav-wrapper">
             <div className={`${classes.List} project-list`}>
-              {data.map(({ title }, index) => {
+              {data.map(({ title, url }, index) => {
                 return (
                   <Title
                     key={index}
                     title={title}
                     setActiveIndex={setActiveIndex}
                     index={index}
+                    url={url}
                   />
                 );
               })}
