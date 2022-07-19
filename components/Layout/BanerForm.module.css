@@ -1,0 +1,43 @@
+.BanerSection {
+  display: flex;
+  justify-content: start;
+  margin-top: 5rem;
+}
+
+.BanerLeft {
+  position: relative;
+  width: 33%;
+  height: 35.8rem;
+}
+.BanerContent {
+  background-color: var(--red);
+  height: 35.8rem;
+  width: 67%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 8em;
+}
+
+.ContentWrapper {
+  max-width: 25.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+.ContentWrapper h2,
+.ContentWrapper p {
+  color: #fffdfb;
+}
+
+.ContentWrapper p {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 1439px) {
+  .ContentWrapper {
+    max-width: 25rem;
+  }
+}

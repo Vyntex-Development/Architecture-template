@@ -4,6 +4,7 @@ import { useState } from "react";
 import HeroProcess from "./HeroProcess";
 import ProcessAbout from "./ProcessAbout";
 import Included from "./Included";
+import BanerForm from "../../Layout/BanerForm";
 
 const ProcessPage = () => {
   const [activeFaq, setActiveFaq] = useState("1");
@@ -19,6 +20,7 @@ const ProcessPage = () => {
         }}
       ></Faq>
       <Testimonials></Testimonials>
+      <BanerForm></BanerForm>
     </div>
   );
 };
