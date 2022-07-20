@@ -111,7 +111,7 @@ const BlogMain = () => {
           <p>
             7 problems with science facts. 8 ways best stores are completely
             overrated. The 17 worst amazing gadgets in history. 16 things about
-            future technologies your kids don't want you to know. Why best
+            future technologies your kids don&apos;t want you to know. Why best
             stores are killing you.
           </p>
           <h2>How business software made me a better person</h2>

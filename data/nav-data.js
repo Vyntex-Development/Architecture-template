@@ -23,7 +23,7 @@ export const data = [
   {
     title: "BLOG",
     imgUrl: "images/blog_nav.png",
-    url: "https://architecture-template.vercel.app/blogCms",
+    url: "https://architecture-template.vercel.app/newblog",
   },
   {
     title: "CONTACT",
