@@ -265,6 +265,14 @@ p {
   .is-active {
     opacity: 0 !important;
   }
+
+  .team-slider .swiper-button-prev:hover {
+    background-image: url("/images/arrow_team_light.png");
+  }
+
+  .team-slider .swiper-button-next:hover {
+    background-image: url("/images/arrow_team_light.png");
+  }
 }
 
 @media screen and (max-width: 767px) {

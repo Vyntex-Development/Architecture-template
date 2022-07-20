@@ -52,6 +52,13 @@
   border: none;
   width: 20rem;
   padding: 0 1.5rem;
+  color: var(--white);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 100%;
+  letter-spacing: -0.03em;
 }
 
 .InputWrapper input.Submit {
@@ -92,5 +99,55 @@
 @media screen and (max-width: 1439px) {
   .ContentWrapper {
     max-width: 25rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .BanerSection {
+    flex-direction: column;
+  }
+  .BanerLeft {
+    width: 100%;
+  }
+
+  .BanerContent {
+    width: 100%;
+
+    padding: 5rem 5vw;
+    height: auto;
+  }
+
+  .BanerContent form {
+    width: 100%;
+  }
+  .InputWrapper {
+    width: 100%;
+  }
+  .InputWrapper input {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .BanerSection {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .BanerLeft {
+    height: 420px;
+  }
+  .InputWrapper {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .InputWrapper input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .InputWrapper input.Submit {
+    width: 100%;
+    margin-top: 0.5rem;
   }
 }

@@ -122,7 +122,7 @@ const Team = () => {
                       layout="fill"
                       objectFit="cover"
                       alt="hero"
-                      src="/images/team_01.png"
+                      src="/images/team_02.png"
                     ></Image>
                   </div>
                 </div>

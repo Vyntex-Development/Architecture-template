@@ -33,3 +33,39 @@
     width: 32rem;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .ProccesAboutSection {
+    height: auto;
+  }
+  .ProccesAboutWrapper {
+    flex-direction: column;
+    padding: 5rem 0;
+    row-gap: 5rem;
+  }
+
+  .AboutImgWrapper {
+    top: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Container {
+    padding: 0 0;
+  }
+  .AboutRight {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 100%;
+  }
+  .AboutImgWrapper {
+    height: 375px;
+  }
+  .AboutRightWrapper {
+    max-width: none;
+  }
+  .AboutRightWrapper h2 {
+    max-width: none;
+  }
+}

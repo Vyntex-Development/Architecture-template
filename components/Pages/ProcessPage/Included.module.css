@@ -28,3 +28,21 @@
     padding-right: 4em;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .IncludedWrapper {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 40px;
+  }
+  .IncludedItems {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .IncludedItems {
+    grid-template-columns: 1fr;
+  }
+}
