@@ -1,7 +1,6 @@
 import Image from "next/image";
 import classes from "./Header.module.css";
 import Link from "../UI/Link";
-import NavItem from "./NavItem";
 import { useState } from "react";
 import useMousePosition from "../../hooks/useMousePosition";
 import Title from "./Title";
@@ -12,6 +11,7 @@ const Header = () => {
   const { x, y } = useMousePosition();
   const [activeIndex, setActiveIndex] = useState(-1);
   const [navOpen, setNavOpen] = useState(false);
+
   return (
     <header className={classes.Header}>
       <div className={`${classes.Container} container`}>

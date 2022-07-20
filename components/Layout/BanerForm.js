@@ -20,6 +20,23 @@ const BanerForm = () => {
           <h2>Not sure how to start? Get a free consultation.</h2>
           <p>One of our experts will get back to you asap.</p>
         </div>
+        <form>
+          <div className={classes.InputWrapper}>
+            <input type="text" placeholder="First name*"></input>
+            <input type="text" placeholder="Last name*"></input>
+          </div>
+          <div className={classes.InputWrapper}>
+            <input type="email" placeholder="Email Address*"></input>
+            <input type="tel" placeholder="Phone Number*" name="phone"></input>
+          </div>
+          <div className={classes.InputWrapper}>
+            <input type="submit" className={classes.Submit}></input>
+            <p>
+              By submitting this form, I approve that I’ve read the terms and
+              condisions and the privacy policy
+            </p>
+          </div>
+        </form>
       </div>
     </div>
   );
