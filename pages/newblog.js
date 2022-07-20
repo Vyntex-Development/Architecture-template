@@ -1,7 +1,7 @@
 import SEO from "../components/SEO/SEO";
 import BlogCms from "../components/Pages/BlogCmsPage/BlogCms";
 
-export default function blogCms({ data }) {
+export default function NewBlog({ data }) {
   return (
     <>
       <SEO />
