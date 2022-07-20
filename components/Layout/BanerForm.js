@@ -20,7 +20,7 @@ const BanerForm = () => {
           <h2>Not sure how to start? Get a free consultation.</h2>
           <p>One of our experts will get back to you asap.</p>
         </div>
-        <form>
+        <form method="get">
           <div className={classes.InputWrapper}>
             <input type="text" placeholder="First name*" required></input>
             <input type="text" placeholder="Last name*" required></input>

@@ -236,6 +236,29 @@ p {
   height: 95px;
 }
 
+::-webkit-progress-bar {
+  background-color: var(--light-gray);
+  border-radius: 1.25rem;
+}
+
+progress {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 13rem;
+  height: 4px;
+  z-index: 10000;
+  position: absolute;
+  border-radius: 1.25rem;
+  z-index: 10;
+}
+
+::-webkit-progress-value {
+  background-color: var(--black);
+  border-radius: 1.25rem;
+}
+
 @media screen and (min-width: 1440px) {
   body {
     font-size: 0.90625em;

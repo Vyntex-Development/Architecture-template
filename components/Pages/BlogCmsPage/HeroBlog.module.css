@@ -1,0 +1,103 @@
+.Container {
+  width: 100%;
+}
+
+.HeroWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+  flex-direction: column;
+}
+
+.HeroLeft {
+  max-width: 41rem;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.HeroLeft p {
+  max-width: 25rem;
+  margin: 0 auto;
+  font-size: 1.3125rem;
+}
+
+.ButtonWrapper {
+  display: flex;
+  margin-top: 2.5rem;
+  justify-content: center;
+}
+
+.ArrowImgWrapper {
+  position: absolute;
+  bottom: -10rem;
+  z-index: 1;
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
+}
+
+.HeroRight {
+  position: relative;
+  width: 100%;
+  height: 50rem;
+}
+
+.Caption {
+  margin-left: auto;
+  margin-right: 7em;
+  margin-top: 1rem;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 151%;
+  letter-spacing: -0.03em;
+  color: var(--black);
+  max-width: 41rem;
+}
+
+@media screen and (max-width: 1439px) {
+  .HeroLeft {
+    max-width: 36rem;
+  }
+  .Caption {
+    margin-right: 4em;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .HeroWrapper {
+    padding-top: 120px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .HeroWrapper {
+    align-items: flex-start;
+    text-align: left;
+    padding-bottom: 40px;
+  }
+
+  .HeroLeft {
+    padding: 0 5vw;
+    margin-bottom: 0;
+  }
+
+  .Caption {
+    display: none;
+  }
+
+  .HeroLeft p {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .ArrowImgWrapper {
+    display: none;
+  }
+  .HeroRight {
+    display: none;
+  }
+}
