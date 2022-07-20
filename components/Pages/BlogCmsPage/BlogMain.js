@@ -90,8 +90,8 @@ const BlogMain = () => {
                 ></input>
                 <input className={classes.Submit} type="submit"></input>
                 <p>
-                  By submitting this form, I approve that I’ve read the terms
-                  and condisions and the privacy policy
+                  By submitting this form, I approve that I&apos;ve read the
+                  terms and condisions and the privacy policy
                 </p>
               </form>
             </div>
@@ -117,11 +117,11 @@ const BlogMain = () => {
           <h2>How business software made me a better person</h2>
           <p>
             How to cheat at accessories and get away with it. This is bold text.
-            The complete beginner's guide to operating systems. This is italic
-            text. The only science current event resources you will ever need.
-            This is underline text. Why open source software is the new black.
-            This is linethrough text. 17 secrets about amazing gadgets the
-            government is hiding.
+            The complete beginner&apos;s guide to operating systems. This is
+            italic text. The only science current event resources you will ever
+            need. This is underline text. Why open source software is the new
+            black. This is linethrough text. 17 secrets about amazing gadgets
+            the government is hiding.
             <span>This is a link text also known as hyperlink.</span>
             How accessories are the new accessories. This is highlight
             background text. The 14 worst songs about passport applications.
@@ -142,7 +142,7 @@ const BlogMain = () => {
           <p>This is list of ol:</p>
           <ol>
             <li>Why cool science experiments are killing you</li>
-            <li>Why you'll never succeed at wholesale accessories</li>
+            <li>Why you&apos;ll never succeed at wholesale accessories</li>
             <li>8 ways electronic devices can make you rich</li>
             <li>8The 20 best resources for science facts</li>
           </ol>
@@ -150,16 +150,16 @@ const BlogMain = () => {
           <p>This is list of ul:</p>
           <ul>
             <li>Why cool science experiments are killing you</li>
-            <li>Why you'll never succeed at wholesale accessories</li>
+            <li>Why you&apos;ll never succeed at wholesale accessories</li>
             <li>8 ways electronic devices can make you rich</li>
             <li>8The 20 best resources for science facts</li>
           </ul>
           <h2>Quote in rich text</h2>
           <div className={classes.QuoteWrapper}>
             <p>
-              “Expose: you're losing money by not using new inventions. Expose:
-              you're losing money by not using geek ideas. How hollywood got
-              science articles all wrong.”
+              “Expose: you&apos;re losing money by not using new inventions.
+              Expose: you&apos;re losing money by not using geek ideas. How
+              hollywood got science articles all wrong.”
             </p>
           </div>
         </div>
