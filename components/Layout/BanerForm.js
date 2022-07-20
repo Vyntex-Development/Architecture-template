@@ -22,12 +22,17 @@ const BanerForm = () => {
         </div>
         <form>
           <div className={classes.InputWrapper}>
-            <input type="text" placeholder="First name*"></input>
-            <input type="text" placeholder="Last name*"></input>
+            <input type="text" placeholder="First name*" required></input>
+            <input type="text" placeholder="Last name*" required></input>
           </div>
           <div className={classes.InputWrapper}>
-            <input type="email" placeholder="Email Address*"></input>
-            <input type="tel" placeholder="Phone Number*" name="phone"></input>
+            <input type="email" placeholder="Email Address*" required></input>
+            <input
+              type="tel"
+              placeholder="Phone Number*"
+              name="phone"
+              required
+            ></input>
           </div>
           <div className={classes.InputWrapper}>
             <input type="submit" className={classes.Submit}></input>
