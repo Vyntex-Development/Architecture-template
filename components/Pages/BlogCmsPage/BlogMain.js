@@ -131,7 +131,7 @@ const BlogMain = () => {
               layout="fill"
               objectFit="cover"
               alt="hero"
-              src="/images/blog_hero.png"
+              src="/images/blog_rich.png"
             ></Image>
           </div>
           <p className={classes.Caption}>
