@@ -4,6 +4,7 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  transition: all 1.3s ease-in-out;
 }
 
 .Click {
@@ -29,11 +30,25 @@
   backdrop-filter: blur(11px);
   top: -3000px;
   transition: all 1.3s ease-in-out;
+  animation: blogopen 0.5s ease-in-out;
+}
+
+@keyframes blogopen {
+  from {
+    top: -200px;
+  }
+  to {
+    top: 38px;
+  }
+}
+
+.BlogMenuOpen {
+  transition: all 1.3s ease-in-out;
 }
 .BlogMenuOpen .BlogForm {
   display: flex;
   opacity: 1;
-  top: 50px;
+  top: 38px;
   transition: all 1.3s ease-in-out;
 }
 .Bg {
@@ -41,6 +56,7 @@
   height: 262px;
   background: #fffdfb;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 1.3s ease-in-out;
 }
 .FormWrapper {
   width: 80%;
