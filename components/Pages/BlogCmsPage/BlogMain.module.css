@@ -182,6 +182,7 @@
   line-height: 151%;
   letter-spacing: -0.03em;
   color: var(--black);
+  margin-bottom: 0;
 }
 
 .Sticky {
