@@ -98,6 +98,20 @@ const BlogMain = () => {
           </div>
         </div>
         <div className={classes.MainRight}>
+          <div className={classes.HeroRight}>
+            <div className={classes.HeroImgWrapper}>
+              <Image
+                layout="fill"
+                objectFit="cover"
+                alt="hero"
+                src="/images/blog_hero.png"
+              ></Image>
+            </div>
+            <p className={classes.CaptionRich}>
+              A caption appears next to the image and identifies or describes
+              the image, and credits the source.
+            </p>
+          </div>
           <p>
             What the beatles could learn from elementary schools. Why mom was
             right about weather radars. 6 myths uncovered about civil societies.

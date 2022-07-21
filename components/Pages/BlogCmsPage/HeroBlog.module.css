@@ -46,7 +46,7 @@
 
 .Caption {
   margin-left: auto;
-  margin-right: 7em;
+  margin-right: 7.2em;
   margin-top: 1rem;
   font-family: "Inter";
   font-style: italic;
@@ -56,6 +56,7 @@
   letter-spacing: -0.03em;
   color: var(--black);
   max-width: 41rem;
+  text-align: left;
 }
 
 @media screen and (max-width: 1439px) {
@@ -63,23 +64,40 @@
     max-width: 36rem;
   }
   .Caption {
-    margin-right: 4em;
+    margin-right: 3.6em;
+    width: 40rem;
   }
 }
 
 @media screen and (max-width: 991px) {
   .HeroWrapper {
     padding-top: 120px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .HeroWrapper {
     align-items: flex-start;
     text-align: left;
     padding-bottom: 40px;
   }
 
+  .HeroRight {
+    display: none;
+  }
+  .Caption {
+    display: none;
+  }
+
+  .ArrowImgWrapper {
+    display: none;
+  }
+
+  .HeroLeft {
+    margin-bottom: 0;
+    padding: 0 5vw;
+  }
+  .HeroLeft p {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .HeroLeft {
     padding: 0 5vw;
     margin-bottom: 0;
@@ -90,7 +108,6 @@
   }
 
   .HeroLeft p {
-    margin: 0;
     font-size: 18px;
   }
 
