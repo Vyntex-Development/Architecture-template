@@ -30,15 +30,23 @@
   backdrop-filter: blur(11px);
   top: -3000px;
   transition: all 1.3s ease-in-out;
-  animation: blogopen 0.5s ease-in-out;
 }
 
 @keyframes blogopen {
   from {
-    top: -200px;
+    top: -100px;
   }
   to {
     top: 38px;
+  }
+}
+
+@keyframes blogclose {
+  from {
+    top: 38px;
+  }
+  to {
+    top: -200px;
   }
 }
 
@@ -50,6 +58,11 @@
   opacity: 1;
   top: 38px;
   transition: all 1.3s ease-in-out;
+  animation: blogopen 0.3s ease-in-out;
+}
+
+.BlogMenuClose .BlogForm {
+  animation: blogclose 0.5s ease-in-out;
 }
 .Bg {
   width: 100%;
@@ -133,7 +146,7 @@
 
 .Header {
   border-bottom: 1px solid #e9e9e8;
-  height: 75px;
+
   position: fixed;
   z-index: 1000;
   background-color: #fffdfb;

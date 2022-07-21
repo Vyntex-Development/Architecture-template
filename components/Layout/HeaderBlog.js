@@ -32,7 +32,7 @@ const HeaderBlog = () => {
               setBlogOpen(!blogOpen);
             }}
             className={`${classes.BlogMenuWrapper} ${
-              blogOpen ? classes.BlogMenuOpen : ""
+              blogOpen ? classes.BlogMenuOpen : classes.BlogMenuClose
             }`}
           >
             <p className={classes.Click}>Subscribe</p>

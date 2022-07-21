@@ -1,10 +1,40 @@
 import classes from "./HeroBlog.module.css";
 import Image from "next/image";
+import { useRef, useEffect } from "react";
 
 const HeroBlog = () => {
+  const progressNav = useRef();
+  const progressbarRef = useRef();
+
+  useEffect(() => {
+    let isScrolling = false;
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () => {
+        isScrolling = true;
+        render();
+        function render() {
+          if (!isScrolling) return;
+          progressbarRef.current.value =
+            (100 -
+              ((progressNav.current.offsetHeight +
+                progressNav.current.getBoundingClientRect().top) /
+                progressNav.current.offsetHeight) *
+                100) *
+            0.09;
+          isScrolling = false;
+        }
+      });
+    }
+  }, []);
+
   return (
     <div>
-      <div className={classes.HeroWrapper}>
+      <div ref={progressNav} className={classes.HeroWrapper}>
+        <progress ref={progressbarRef} min="0" max="100" value="1">
+          <div className="progress-bar">
+            <span></span>
+          </div>
+        </progress>
         <div className={classes.HeroLeft}>
           <h1>Underfoot and reaching into the light</h1>
           <p>

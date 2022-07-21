@@ -11,6 +11,8 @@
 .Logo {
   padding: 0rem 0rem;
   border-radius: 0rem;
+  position: relative;
+  z-index: 4;
 }
 
 .Dark a {
