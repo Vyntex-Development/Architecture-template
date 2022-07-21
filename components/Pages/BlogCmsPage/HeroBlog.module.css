@@ -59,6 +59,15 @@
   text-align: left;
 }
 
+.HeroNav {
+  height: 71px;
+  position: fixed;
+  background-color: red;
+  width: 100%;
+  top: -500px;
+  z-index: 1000;
+}
+
 @media screen and (max-width: 1439px) {
   .HeroLeft {
     max-width: 36rem;
@@ -70,6 +79,9 @@
 }
 
 @media screen and (max-width: 991px) {
+  .HeroNav {
+    top: 0;
+  }
   .HeroWrapper {
     padding-top: 120px;
     align-items: flex-start;

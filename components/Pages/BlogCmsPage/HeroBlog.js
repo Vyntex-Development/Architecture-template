@@ -4,6 +4,7 @@ import Image from "next/image";
 const HeroBlog = () => {
   return (
     <div>
+      <div className={classes.HeroNav}>subscribe</div>
       <div className={classes.HeroWrapper}>
         <div className={classes.HeroLeft}>
           <h1>Underfoot and reaching into the light</h1>
