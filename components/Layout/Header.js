@@ -11,12 +11,15 @@ const Header = () => {
   const { x, y } = useMousePosition();
   const [activeIndex, setActiveIndex] = useState(-1);
   const [navOpen, setNavOpen] = useState(false);
+  const onNavigationClose = () => {
+    setNavOpen(false);
+  };
 
   return (
     <header className={classes.Header}>
       <div className={`${classes.Container} container`}>
         <div className={classes.NavWrapper}>
-          <Link type="logo" href="https://architecture-template.vercel.app/">
+          <Link type="logo" href="/">
             <Image
               layout="fixed"
               objectFit="contain"
@@ -64,6 +67,7 @@ const Header = () => {
                     setActiveIndex={setActiveIndex}
                     index={index}
                     url={url}
+                    onClick={onNavigationClose}
                   />
                 );
               })}

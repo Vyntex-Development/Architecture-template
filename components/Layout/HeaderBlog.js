@@ -12,6 +12,9 @@ const HeaderBlog = () => {
   const [activeIndex, setActiveIndex] = useState(-1);
   const [navOpen, setNavOpen] = useState(false);
   const [blogOpen, setBlogOpen] = useState(false);
+  const onNavigationClose = () => {
+    setNavOpen(false);
+  };
 
   return (
     <header className={classes.Header}>
@@ -95,6 +98,7 @@ const HeaderBlog = () => {
                     setActiveIndex={setActiveIndex}
                     index={index}
                     url={url}
+                    onClick={onNavigationClose}
                   />
                 );
               })}

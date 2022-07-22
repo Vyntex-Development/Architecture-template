@@ -1,7 +1,7 @@
 import NextLink from "next/link";
 import classes from "./Link.module.css";
 
-const Link = ({ children, href, type }) => {
+const Link = ({ children, href, type, onClick }) => {
   let className;
 
   if (type === "dark") {
@@ -36,7 +36,7 @@ const Link = ({ children, href, type }) => {
   }
 
   return (
-    <div className={`${classes.Link} ${className}`}>
+    <div onClick={onClick} className={`${classes.Link} ${className}`}>
       <NextLink passHref href={href}>
         <a>{children}</a>
       </NextLink>
