@@ -26,6 +26,14 @@ const HeroProject = () => {
                 src="/images/project_hero.png"
               ></Image>
             </div>
+            <div className={classes.HeroImgWrapperMobile}>
+              <Image
+                layout="fill"
+                objectFit="cover"
+                alt="hero"
+                src="/images/project_hero_mobile.png"
+              ></Image>
+            </div>
           </div>
           <div className={classes.NavBorder}></div>
         </div>

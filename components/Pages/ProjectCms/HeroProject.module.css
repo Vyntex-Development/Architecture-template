@@ -51,8 +51,58 @@
   left: 0;
   right: 0;
 }
+
+.HeroImgWrapperMobile {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 40rem;
+}
+
 @media screen and (max-width: 1439px) {
   .HeroLeft {
     max-width: 39rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .HeroLeft {
+    max-width: 24rem;
+  }
+  .HeroLeft p {
+    max-width: 19rem;
+  }
+
+  .HeroImgWrapper {
+    display: none;
+  }
+
+  .HeroImgWrapperMobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .NavBorder {
+    width: 90vw;
+    left: 5vw;
+    right: 5vw;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .HeroSection {
+    height: 96vh;
+  }
+  .HeroWrapper {
+    height: 100%;
+    padding-top: 120px;
+  }
+  .HeroLeft {
+    max-width: 18rem;
+  }
+
+  .HeroImgWrapperMobile {
+    height: 100%;
   }
 }
