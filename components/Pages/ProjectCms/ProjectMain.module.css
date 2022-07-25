@@ -1,0 +1,105 @@
+.Container {
+  padding-top: 5.5rem;
+  padding-bottom: 5rem;
+}
+
+.MainWrapper {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.Margin {
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.MainItemWrapper h2 {
+  color: #7d7977;
+  max-width: 26.75rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.MainItemWrapper p {
+  color: #7d7977;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.31rem;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  transition: all 0.5s ease-in-out;
+}
+
+.DescriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.MainItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.DetailsWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.ProjectArrow {
+  margin-left: auto;
+  margin-top: 0.875rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.ProgressWrapper {
+  width: 100%;
+  background-color: rgba(119, 123, 125, 0.2);
+  height: 1px;
+}
+
+.Progress {
+  height: 100%;
+  background-color: var(--black);
+  width: 0%;
+  transition: all 0.5s ease-in-out;
+}
+
+.MainWrapper:hover .Progress {
+  width: 100%;
+  background-color: var(--black);
+}
+
+.MainWrapper:hover h2,
+.MainWrapper:hover p {
+  color: var(--black);
+}
+
+.MainWrapper:hover .ProjectArrow {
+  filter: invert(63%) sepia(72%) saturate(2640%) hue-rotate(332deg)
+    brightness(-53%) contrast(388%);
+}
+@media screen and (max-width: 991px) {
+  .Container {
+    padding-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .MainItem {
+    flex-direction: column;
+    row-gap: 24px;
+    align-items: flex-start;
+  }
+  .DetailsWrapper {
+    width: 100%;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

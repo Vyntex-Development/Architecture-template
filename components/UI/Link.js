@@ -35,6 +35,10 @@ const Link = ({ children, href, type, onClick }) => {
     className = classes.Social;
   }
 
+  if (type === "project") {
+    className = classes.Project;
+  }
+
   return (
     <div onClick={onClick} className={`${classes.Link} ${className}`}>
       <NextLink passHref href={href}>
