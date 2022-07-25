@@ -12,7 +12,7 @@ export const data = [
   {
     title: "PROJECTS",
     imgUrl: "images/project_nav.png",
-    url: "/about",
+    url: "/project",
   },
 
   {
