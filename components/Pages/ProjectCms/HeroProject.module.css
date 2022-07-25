@@ -1,0 +1,58 @@
+.Container {
+  width: 100%;
+}
+
+.HeroWrapper {
+  padding-bottom: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 35rem;
+}
+
+.HeroLeft {
+  width: 41rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+  z-index: 1;
+}
+
+.HeroLeft p {
+  max-width: 27rem;
+  margin-bottom: 1.5rem;
+}
+
+.HeroImgWrapper {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+}
+
+.HeroSection {
+  position: relative;
+  height: 40rem;
+}
+
+.HeroRight {
+  position: absolute;
+  top: -75px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.NavBorder {
+  height: 1px;
+  width: 100%;
+  background-color: #e9e9e8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media screen and (max-width: 1439px) {
+  .HeroLeft {
+    max-width: 39rem;
+  }
+}
