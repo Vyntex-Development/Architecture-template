@@ -1,11 +1,11 @@
 import SEO from "../components/SEO/SEO";
-import ProjectCms from "../components/Pages/ProjectCms/ProjectCms";
+import ProjectPage from "../components/Pages/ProjectPage/ProjectPage";
 
 export default function Project({ data }) {
   return (
     <>
       <SEO />
-      <ProjectCms data={data} />
+      <ProjectPage data={data} />
     </>
   );
 }

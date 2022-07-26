@@ -4,7 +4,7 @@ import Testimonials from "../../Layout/Testimonials";
 import HeroProject from "./HeroProject";
 import ProjectMain from "./ProjectMain";
 
-const ProjectCms = () => {
+const ProjectPage = () => {
   return (
     <div>
       <HeroProject></HeroProject>
@@ -16,4 +16,4 @@ const ProjectCms = () => {
   );
 };
 
-export default ProjectCms;
+export default ProjectPage;
