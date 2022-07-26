@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import FsLightbox from "fslightbox-react";
 import classes from "./LightBoxGallery.module.css";
 import Image from "next/image";
+import ProjectMain from "../Pages/ProjectPage/ProjectMain";
 
 const LightBoxGallery = () => {
   const [lightboxController, setLightboxController] = useState({
@@ -75,7 +76,11 @@ const LightBoxGallery = () => {
               slide={lightboxController.slide}
             />
           </div>
+          <p className={classes.Next}>NEXT PROJECT</p>
         </div>
+      </div>
+      <div className={classes.GalleryBottom}>
+        <ProjectMain></ProjectMain>
       </div>
     </>
   );

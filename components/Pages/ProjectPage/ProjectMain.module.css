@@ -1,4 +1,4 @@
-.Container {
+.ContainerMain {
   padding-top: 5.5rem;
   padding-bottom: 5rem;
 }
@@ -83,8 +83,20 @@
   filter: invert(63%) sepia(72%) saturate(2640%) hue-rotate(332deg)
     brightness(-53%) contrast(388%);
 }
+
+.CmsStyle {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.CmsStyle .MainWrapper {
+  display: none;
+}
+.CmsStyle .MainWrapper:nth-of-type(2) {
+  display: block;
+}
+
 @media screen and (max-width: 991px) {
-  .Container {
+  .ContainerMain {
     padding-top: 3rem;
   }
 }
