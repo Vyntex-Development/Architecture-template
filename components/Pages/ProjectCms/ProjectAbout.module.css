@@ -1,0 +1,43 @@
+.Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+}
+
+.AboutTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.AboutTop p {
+  max-width: 41rem;
+  line-height: 151%;
+  color: var(--black);
+}
+.AboutImage {
+  position: relative;
+  width: 100%;
+  height: 42.5rem;
+}
+.AboutBottom {
+  max-width: 41rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.AboutBottom p {
+  line-height: 151%;
+  color: var(--black);
+}
+
+@media screen and (max-width: 1439px) {
+  .AboutBottom {
+    max-width: 50%;
+  }
+
+  .AboutTop p {
+    max-width: 50%;
+  }
+}
