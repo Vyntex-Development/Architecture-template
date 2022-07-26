@@ -8,7 +8,7 @@
 .ServicesLeft {
   width: 27rem;
   margin-left: 7em;
-  padding-top: 4.37rem;
+  padding-top: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -76,7 +76,22 @@
 .ServicesImageWrapper {
   position: relative;
   width: 100%;
-  height: 32rem;
+  height: 32.3rem;
+}
+
+.MarginProject {
+  padding-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.BgColor {
+  background-color: #f8f8f8;
+}
+
+@media screen and (max-width: 1439px) {
+  .ServicesImageWrapper {
+    height: 32.1rem;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -95,6 +110,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .MarginProject {
+    margin-top: 0;
+  }
   .Container {
     padding: 0 0;
   }
@@ -108,5 +126,11 @@
   }
   .ServicesImageWrapper {
     height: 110vw;
+  }
+
+  .MarginProject {
+    flex-direction: column-reverse;
+    padding-top: 0;
+    padding-bottom: 80px;
   }
 }

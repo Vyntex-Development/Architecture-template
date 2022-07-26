@@ -16,10 +16,7 @@ const Blog = () => {
             </div>
           </div>
           <div className={classes.BlogCardsWrapper}>
-            <a
-              href="https://nextjs.org/docs/basic-features/font-optimization"
-              className={classes.BlogCard}
-            >
+            <a href="/newblog" className={classes.BlogCard}>
               <div className={classes.BlogImageWrapper}>
                 <div className={classes.BlogImage}>
                   <Image
@@ -64,10 +61,7 @@ const Blog = () => {
                 </div>
               </div>
             </a>
-            <a
-              href="https://nextjs.org/docs/basic-features/font-optimization"
-              className={classes.BlogCard}
-            >
+            <a href="/newblog" className={classes.BlogCard}>
               <div className={classes.BlogImageWrapper}>
                 <div className={classes.BlogImage}>
                   <Image
@@ -112,10 +106,7 @@ const Blog = () => {
                 </div>
               </div>
             </a>
-            <a
-              href="https://nextjs.org/docs/basic-features/font-optimization"
-              className={classes.BlogCard}
-            >
+            <a href="/newblog" className={classes.BlogCard}>
               <div className={classes.BlogImageWrapper}>
                 <div className={classes.BlogImage}>
                   <Image
