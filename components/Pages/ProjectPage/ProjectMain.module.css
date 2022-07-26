@@ -99,6 +99,10 @@
   .ContainerMain {
     padding-top: 3rem;
   }
+
+  .CmsStyle {
+    padding-top: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -113,5 +117,9 @@
     text-align: left;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .CmsStyle {
+    padding-bottom: 5rem;
   }
 }

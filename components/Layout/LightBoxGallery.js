@@ -19,7 +19,7 @@ const LightBoxGallery = () => {
 
   return (
     <>
-      <div className="container">
+      <div className={`${classes.Container} container`}>
         <div className={classes.GalleryWrapper}>
           <div>
             <h2>Gallery</h2>

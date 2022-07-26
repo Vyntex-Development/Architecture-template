@@ -41,3 +41,40 @@
     max-width: 50%;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .AboutTop {
+    flex-direction: column;
+  }
+
+  .AboutTop p {
+    max-width: 100%;
+  }
+
+  .AboutImage {
+    height: 60vw;
+  }
+
+  .AboutBottom {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Container {
+    padding: 0;
+  }
+  .AboutTop {
+    padding: 0 5vw;
+  }
+
+  .AboutBottom {
+    padding: 0 5vw;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .AboutImage {
+    height: 110vw;
+  }
+}
