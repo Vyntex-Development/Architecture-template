@@ -133,6 +133,11 @@
   color: #7d7977;
 }
 
+.Blog {
+  padding: 0 0;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 767px) {
   .NavOpen a {
     font-size: 32px;
