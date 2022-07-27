@@ -23,7 +23,7 @@ export const data = [
   {
     title: "BLOG",
     imgUrl: "images/blog_nav.png",
-    url: "/newblog",
+    url: "/blog",
   },
   {
     title: "CONTACT",
