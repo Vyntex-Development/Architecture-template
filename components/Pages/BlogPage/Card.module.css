@@ -1,20 +1,3 @@
-.BlogSection {
-  background-color: var(--light-gray);
-}
-.BlogWrapper {
-  padding: 5rem 0;
-}
-
-.BlogHeading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2.5rem;
-}
-
-.BlogHeading h2 {
-  margin-bottom: 0;
-}
 .BlogCardsWrapper {
   display: flex;
   justify-content: space-between;

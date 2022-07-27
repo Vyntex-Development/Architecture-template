@@ -71,8 +71,6 @@
   justify-content: start;
   align-items: center;
   padding-top: 1rem;
-  margin-top: 1rem;
-  border-top: 1px solid #e9e9e8;
 }
 .TimeWrapper {
   display: flex;
@@ -85,6 +83,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.ArrowImg {
+  transition: all 0.5s ease-in-out;
 }
 
 .DetailsWrapper p {
@@ -93,10 +95,37 @@
   letter-spacing: -0.03em;
   color: #7d7977;
   margin-bottom: 0;
+  transition: all 0.5s ease-in-out;
 }
 .Margin {
   margin-right: auto;
   margin-left: 2.3rem;
+}
+.ProgressWrapper {
+  width: 100%;
+  height: 1px;
+  background-color: #e9e9e8;
+  transition: all 0.5s ease-in-out;
+}
+.Progress {
+  width: 0;
+  height: 1px;
+  background-color: var(--black);
+  transition: all 0.5s ease-in-out;
+}
+
+.HeroLeft:hover .Progress {
+  width: 100%;
+}
+
+.HeroLeft:hover .DetailsWrapper p {
+  color: var(--black);
+}
+
+.HeroLeft:hover .ArrowImg,
+.HeroLeft:hover .TimeImage {
+  filter: invert(63%) sepia(72%) saturate(2640%) hue-rotate(332deg)
+    brightness(-53%) contrast(388%);
 }
 
 @media screen and (max-width: 991px) {
@@ -114,6 +143,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .HeroLeft {
+    padding: 40px 24px;
+    margin-bottom: -202px;
+  }
   .HeroImgWrapper {
     display: none;
   }
@@ -126,6 +159,13 @@
     left: 5vw;
     right: 5vw;
   }
+
+  .Container {
+    height: 100%;
+  }
+  .HeroWrapper {
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -133,11 +173,7 @@
     height: 96vh;
   }
   .HeroWrapper {
-    height: 100%;
     padding-top: 120px;
-  }
-  .HeroLeft {
-    max-width: 18rem;
   }
 
   .HeroImgWrapperMobile {

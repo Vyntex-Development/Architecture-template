@@ -1,20 +1,60 @@
-.BlogSection {
+.TrandingSection {
   background-color: var(--light-gray);
 }
-.BlogWrapper {
-  padding: 5rem 0;
+
+.Container {
+  padding-top: 13rem;
+  padding-bottom: 5rem;
 }
 
-.BlogHeading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.Container h2 {
   margin-bottom: 2.5rem;
 }
 
-.BlogHeading h2 {
-  margin-bottom: 0;
+.Cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 1rem;
+  row-gap: 1rem;
 }
+
+.Cards div:nth-of-type(1) {
+  grid-column: 1 / span 2;
+}
+
+.Cards div:nth-of-type(1) .BlogCard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Cards div:nth-of-type(1) .BlogCard .BlogImageWrapper {
+  width: 63%;
+}
+
+.Cards div:nth-of-type(2) .BlogCard .BlogImageWrapper .BlogImage {
+  height: 18.75rem;
+}
+
+.Cards div:nth-of-type(1) .BlogCard .BlogImageWrapper .BlogImage {
+  height: 100%;
+}
+.Cards div:nth-of-type(1) .BlogCard .BlogContentWrapper {
+  width: 37%;
+  margin-top: auto;
+}
+.Cards div:nth-of-type(1) .BlogCard .BlogContentWrapper h3 {
+  font-size: 2rem;
+}
+
+.BlogContentWrapper h3 {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-size: 1.31rem;
+  font-weight: 500;
+  line-height: 100%;
+  text-transform: capitalize;
+}
+
 .BlogCardsWrapper {
   display: flex;
   justify-content: space-between;
@@ -24,6 +64,7 @@
 .BlogCard {
   background-color: #fffdfb;
   text-decoration: none;
+  height: 100%;
 }
 
 .BlogImageWrapper {
@@ -33,7 +74,7 @@
 .BlogImage {
   position: relative;
   width: 100%;
-  height: 19.5rem;
+  height: 13.875rem;
 
   transition: all 0.3s ease-in-out;
 }
@@ -45,11 +86,7 @@
 .BlogContentWrapper {
   padding: 1rem 1rem 1.5rem 1rem;
 }
-.BlogContentWrapper h3 {
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  max-width: 17rem;
-}
+
 .DetailsWrapper {
   display: flex;
   justify-content: start;
@@ -125,22 +162,68 @@
     brightness(-53%) contrast(388%);
 }
 
+@media screen and (max-width: 1439px) {
+  .Cards div:nth-of-type(1) .BlogCard .BlogImageWrapper {
+    width: 55%;
+  }
+
+  .Cards div:nth-of-type(1) .BlogCard .BlogContentWrapper {
+    width: 45%;
+  }
+}
+
 @media screen and (max-width: 991px) {
+  .Container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .Container h2 {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .Cards div:nth-of-type(1) {
+    grid-column: 1 / span 1;
+  }
+
+  .Cards div:nth-of-type(1) .BlogCard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Cards div:nth-of-type(1) .BlogCard .BlogImageWrapper {
+    width: 100%;
+    height: 55vw;
+  }
+
+  .Cards div:nth-of-type(2) .BlogCard .BlogImageWrapper .BlogImage {
+    height: 55vw;
+  }
+
+  .Cards div:nth-of-type(1) .BlogCard .BlogImageWrapper .BlogImage {
+    height: 100%;
+  }
+  .Cards div:nth-of-type(1) .BlogCard .BlogContentWrapper {
+    width: 100%;
+    margin-top: auto;
+  }
+
+  .Cards {
+    grid-template-columns: 1fr;
+  }
+
   .BlogImage {
-    height: 10rem;
+    height: 55vw;
   }
   .BlogContentWrapper h3 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    overflow: hidden;
   }
-  .ArrowImg {
-    display: none;
-  }
+
   .Margin {
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: auto;
+    margin-left: 2.3rem;
   }
   .DetailsWrapper {
     justify-content: space-between;
@@ -149,7 +232,7 @@
 
 @media screen and (max-width: 767px) {
   .Container {
-    padding: 0 0;
+    padding-top: 226px;
   }
   .BlogHeading {
     padding: 0 5vw;
@@ -170,9 +253,6 @@
   .Margin {
     margin-right: auto;
     margin-left: 2.3rem;
-  }
-  .BlogCard {
-    background-color: transparent;
   }
 
   .BlogImage {

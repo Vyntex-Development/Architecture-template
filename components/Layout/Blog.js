@@ -34,6 +34,9 @@ const Blog = () => {
                     Donec efficitur dolor et odio tempus, nec lobortis nunc
                     ultricies. Mauris convallis turpis quis imperdiet finibus...
                   </p>
+                  <div className={classes.ProgressWrapper}>
+                    <div className={classes.Progress}></div>
+                  </div>
                   <div className={classes.DetailsWrapper}>
                     <div className={classes.TimeWrapper}>
                       <div className={classes.TimeImage}>
@@ -81,6 +84,9 @@ const Blog = () => {
                     Pellentesque rutrum sit amet purus vel auctor. Proin sit
                     amet lacus nec dui maximus posuere vitae vitae...
                   </p>
+                  <div className={classes.ProgressWrapper}>
+                    <div className={classes.Progress}></div>
+                  </div>
                   <div className={classes.DetailsWrapper}>
                     <div className={classes.TimeWrapper}>
                       <div className={classes.TimeImage}>
@@ -128,6 +134,9 @@ const Blog = () => {
                     Maecenas efficitur magna nulla, nec volutpat sem convallis
                     quis. Nam molestie venenatis malesuada...
                   </p>
+                  <div className={classes.ProgressWrapper}>
+                    <div className={classes.Progress}></div>
+                  </div>
                   <div className={classes.DetailsWrapper}>
                     <div className={classes.TimeWrapper}>
                       <div className={classes.TimeImage}>

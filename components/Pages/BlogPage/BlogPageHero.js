@@ -15,6 +15,9 @@ const BlogPageHero = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                   condimentum gravida lectus finibus mattis.
                 </p>
+                <div className={classes.ProgressWrapper}>
+                  <div className={classes.Progress}></div>
+                </div>
                 <div className={classes.DetailsWrapper}>
                   <div className={classes.TimeWrapper}>
                     <div className={classes.TimeImage}>
