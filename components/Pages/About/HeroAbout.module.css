@@ -108,8 +108,14 @@
   .Container {
     padding: 0 0;
   }
+
+  .HeroWrapper {
+    row-gap: 0rem;
+  }
   .HeroLeft {
-    padding: 0 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5rem;
     width: auto;
   }
 

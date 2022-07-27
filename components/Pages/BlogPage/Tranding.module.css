@@ -215,11 +215,6 @@
   .BlogImage {
     height: 55vw;
   }
-  .BlogContentWrapper h3 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
 
   .Margin {
     margin-right: auto;
