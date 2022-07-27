@@ -133,4 +133,12 @@
     padding-top: 0;
     padding-bottom: 80px;
   }
+
+  .MarginProject .ServicesLeft {
+    padding-top: 5rem;
+  }
+
+  .MarginProject {
+    row-gap: 0;
+  }
 }

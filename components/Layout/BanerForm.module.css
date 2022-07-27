@@ -150,5 +150,9 @@
     width: 100%;
     margin-top: 0.5rem;
     overflow: hidden;
+    -webkit-border-radius: 2.5rem;
+    -moz-border-radius: 2.5rem;
+    border-radius: 2.5rem;
+    -khtml-border-radius: 2.5rem;
   }
 }
