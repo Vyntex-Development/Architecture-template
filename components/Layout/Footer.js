@@ -182,7 +182,7 @@ const Footer = () => {
                 </Link>
               </div>
               <div className={classes.SmallLinkWrapper}>
-                <Link href="/" type="smallfooter">
+                <Link href="/privacyPolicy" type="smallfooter">
                   Privacy
                 </Link>
                 <Link href="/" type="smallfooter">
